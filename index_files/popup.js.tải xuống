@@ -1,0 +1,73 @@
+/*
+	Date 04-12-2015
+	By Ambient Digital Group - Phuong.Mach@ambientdigitalgroup.com
+*/
+
+
+
+
+
+var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var t="";var n,r,i,s,o,u,a;var f=0;e=Base64._utf8_encode(e);while(f<e.length){n=e.charCodeAt(f++);r=e.charCodeAt(f++);i=e.charCodeAt(f++);s=n>>2;o=(n&3)<<4|r>>4;u=(r&15)<<2|i>>6;a=i&63;if(isNaN(r)){u=a=64}else if(isNaN(i)){a=64}t=t+this._keyStr.charAt(s)+this._keyStr.charAt(o)+this._keyStr.charAt(u)+this._keyStr.charAt(a)}return t},decode:function(e){var t="";var n,r,i;var s,o,u,a;var f=0;e=e.replace(/[^A-Za-z0-9\+\/\=]/g,"");while(f<e.length){s=this._keyStr.indexOf(e.charAt(f++));o=this._keyStr.indexOf(e.charAt(f++));u=this._keyStr.indexOf(e.charAt(f++));a=this._keyStr.indexOf(e.charAt(f++));n=s<<2|o>>4;r=(o&15)<<4|u>>2;i=(u&3)<<6|a;t=t+String.fromCharCode(n);if(u!=64){t=t+String.fromCharCode(r)}if(a!=64){t=t+String.fromCharCode(i)}}t=Base64._utf8_decode(t);return t},_utf8_encode:function(e){e=e.replace(/\r\n/g,"\n");var t="";for(var n=0;n<e.length;n++){var r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r)}else if(r>127&&r<2048){t+=String.fromCharCode(r>>6|192);t+=String.fromCharCode(r&63|128)}else{t+=String.fromCharCode(r>>12|224);t+=String.fromCharCode(r>>6&63|128);t+=String.fromCharCode(r&63|128)}}return t},_utf8_decode:function(e){var t="";var n=0;var r=c1=c2=0;while(n<e.length){r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r);n++}else if(r>191&&r<224){c2=e.charCodeAt(n+1);t+=String.fromCharCode((r&31)<<6|c2&63);n+=2}else{c2=e.charCodeAt(n+1);c3=e.charCodeAt(n+2);t+=String.fromCharCode((r&15)<<12|(c2&63)<<6|c3&63);n+=3}}return t}}
+
+var replay=0;
+var abd_media_domain;
+var click_url;	
+var banner_id;	
+v0 = location.href.split('?')[1];
+path = Base64.decode(v0);
+var params = path.split('&');
+data = {};
+for (x in params){
+	data[params[x].split('=')[0]] = params[x].split('=')[1];
+}
+replay=data["r"];
+abd_media_domain=decodeURIComponent(data["abd_media_domain"]);
+click_url = decodeURIComponent(data["abd_click_url"]);
+banner_id=decodeURIComponent(data["banner_id"]);
+url_web = decodeURIComponent(data["url_web"]);
+
+
+function showOPAds()
+{	
+	document.write(htmlFile);		
+}
+
+function trackingAbdClickHTML5_Popup()
+{		
+	window.open(click_url);
+	parent.postMessage({func_type:'trackingAbdClick3rd_IFRAME', param1:banner_id},"*");
+}
+
+function setAbdExpand(){
+
+	parent.postMessage({func_type:'ExpandBanner_html5', param1:banner_id},"*");
+};
+
+function setAbdPre(){
+
+	parent.postMessage({func_type:'MaxBanner_html5', param1:banner_id},"*");
+};
+
+function minAbdPopupAd()
+{ 
+	parent.postMessage({func_type:'MinBanner_html5', param1:banner_id},"*");
+};
+function restoreAbdPopupAd() 
+{   	
+	setAbdPre();
+};
+ 
+function closeAbdPopupAd()
+{		
+	parent.postMessage({func_type:'CloseBanner_html5', param1:banner_id},"*");
+	setTimeout("showOPAds()", 900000);
+};
+
+
+
+
+
+
+var htmlFile = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>300x250_800x500</title><script src="'+abd_media_domain+'/js/easeljs-0.8.1.min.js"></script><script src="'+abd_media_domain+'/js/tweenjs-0.6.1.min.js"></script><script src="'+abd_media_domain+'/js/movieclip-0.8.1.min.js"></script><script src="'+abd_media_domain+'/js/preloadjs-0.6.1.min.js"></script><script src="'+abd_media_domain+'/js/func_click.js"></script><script src="300x250_800x500.js"></script><script>var canvas, stage, exportRoot;var value_rep=0;var value_rep_small=0;var video;var value_click=true;function init(){canvas=document.getElementById("canvas");images=images||{};var loader=new createjs.LoadQueue(false);loader.addEventListener("fileload", handleFileLoad);loader.addEventListener("complete", handleComplete);loader.loadManifest(lib.properties.manifest);}function handleFileLoad(evt){if (evt.item.type=="image"){images[evt.item.id]=evt.result;}}function handleComplete(evt){exportRoot=new lib._300x250_800x500();stage=new createjs.Stage(canvas);stage.addChild(exportRoot);stage.update();stage.enableMouseOver();createjs.Ticker.setFPS(lib.properties.fps);createjs.Ticker.addEventListener("tick", stage);}</script></head><body onload="init();" style=""><div id="html5Div"><div id="div_canvas"></div><canvas id="canvas" width="800" height="500" style=""></canvas></div></body></html>';
+
+showOPAds();

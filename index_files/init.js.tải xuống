@@ -1,0 +1,250 @@
+/*
+	Date 04-12-2015
+	By Ambient Digital Group - Phuong.Mach@ambientdigitalgroup.com
+*/
+
+
+var ifDiv, bgDiv;
+var ran = Math.floor(Math.random() * 11);
+var divHTML5 = "if_abd_media_" + abd_banner_id;
+
+var wExpand = 800;
+var hExpand = 500;
+var wNormal = 300;
+var hNormal = 250;
+var wMin = 300;
+var hMin = 150;
+
+var bgColor=""; /* #000000 */
+var bgAlpha="0.7";
+
+var state = "expand";
+
+var position_Expand = "bottom-right";	/*bottom-right, center, top, bottom, bottom-left*/
+var position_Banner = "bottom-right"; /*bottom-right, bottom-left, bottom, top*/
+var position_Min = position_Banner;//"bottom-right"; /*bottom-right, bottom-left, bottom, top*/
+
+
+
+listen();
+
+
+if (document.getElementById('AbdPopupAd')) {
+    document.getElementById('AbdPopupAd').style.overflow = "inherit";
+    setTimeout(function() {
+        document.getElementById('AbdPopupAd').style.position = "inherit";
+    }, 100)
+}
+
+var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var t="";var n,r,i,s,o,u,a;var f=0;e=Base64._utf8_encode(e);while(f<e.length){n=e.charCodeAt(f++);r=e.charCodeAt(f++);i=e.charCodeAt(f++);s=n>>2;o=(n&3)<<4|r>>4;u=(r&15)<<2|i>>6;a=i&63;if(isNaN(r)){u=a=64}else if(isNaN(i)){a=64}t=t+this._keyStr.charAt(s)+this._keyStr.charAt(o)+this._keyStr.charAt(u)+this._keyStr.charAt(a)}return t},decode:function(e){var t="";var n,r,i;var s,o,u,a;var f=0;e=e.replace(/[^A-Za-z0-9\+\/\=]/g,"");while(f<e.length){s=this._keyStr.indexOf(e.charAt(f++));o=this._keyStr.indexOf(e.charAt(f++));u=this._keyStr.indexOf(e.charAt(f++));a=this._keyStr.indexOf(e.charAt(f++));n=s<<2|o>>4;r=(o&15)<<4|u>>2;i=(u&3)<<6|a;t=t+String.fromCharCode(n);if(u!=64){t=t+String.fromCharCode(r)}if(a!=64){t=t+String.fromCharCode(i)}}t=Base64._utf8_decode(t);return t},_utf8_encode:function(e){e=e.replace(/\r\n/g,"\n");var t="";for(var n=0;n<e.length;n++){var r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r)}else if(r>127&&r<2048){t+=String.fromCharCode(r>>6|192);t+=String.fromCharCode(r&63|128)}else{t+=String.fromCharCode(r>>12|224);t+=String.fromCharCode(r>>6&63|128);t+=String.fromCharCode(r&63|128)}}return t},_utf8_decode:function(e){var t="";var n=0;var r=c1=c2=0;while(n<e.length){r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r);n++}else if(r>191&&r<224){c2=e.charCodeAt(n+1);t+=String.fromCharCode((r&31)<<6|c2&63);n+=2}else{c2=e.charCodeAt(n+1);c3=e.charCodeAt(n+2);t+=String.fromCharCode((r&15)<<12|(c2&63)<<6|c3&63);n+=3}}return t}}
+
+
+loadIF(divHTML5,  wExpand, hExpand);
+
+function getScr() {
+    if (self.innerHeight) { // all except Explorer
+        scnWid = self.innerWidth;
+        scnHei = self.innerHeight;
+    } else if (document.documentElement && document.documentElement.clientHeight) { // Explorer 6 Strict Mode
+        scnWid = document.documentElement.clientWidth;
+        scnHei = document.documentElement.clientHeight;
+    } else if (document.body) { // other Explorers
+        scnWid = document.body.clientWidth;
+        scnHei = document.body.clientHeight;
+    }
+    return [scnWid, scnHei];
+};
+
+function setPositionBanner()
+{
+	getScr();
+	var winH = scnHei;
+	var winW = scnWid;
+	var position, width, height;	
+	var psBottom, psLeft, psTop, psRight;
+	
+	switch (state)	
+	{	
+		case "normal":
+			position = position_Banner;
+			width = wNormal;
+			height = hNormal;
+			if (bgColor != "")
+				bgDiv.style.display = "none";
+			break;
+		case "expand":
+			position = position_Expand;
+			width = wExpand;
+			height = hExpand;
+			if (bgColor != "")
+				bgDiv.style.display = "block";
+			break;
+		case "min":
+			position = position_Min;
+			width = wMin;
+			height = hMin;
+			if (bgColor != "")
+				bgDiv.style.display = "none";
+			break;		
+	}	
+	switch (position) {            
+		case "bottom-left":
+			psBottom = 0+ "px";
+			psLeft = 0+ "px";
+			psTop = "";
+			psRight = "";			
+			break;
+		case "bottom-right":
+			psBottom = 0+ "px";
+			psLeft = "";
+			psTop = "";
+			psRight = 0+ "px";	
+			break;
+		case "top":
+			psBottom = "";
+			psLeft = "";
+			psTop = 0+ "px";
+			psRight = ((winW - width) / 2)+ "px";	
+			break;
+		case "center":
+			psBottom = ((winH - height) / 2)+ "px";
+			psLeft = "";
+			psTop = "";
+			psRight = ((winW - width) / 2)+ "px";	
+			break;
+		case "bottom":
+			psBottom = 0+ "px";
+			psLeft = ""
+			psTop = "";
+			psRight = ((winW - width) / 2)+ "px";		
+			break;
+	}
+	ifDiv.style.top = psTop;
+	ifDiv.style.bottom = psBottom; 
+	ifDiv.style.right = psRight;
+	ifDiv.style.left = psLeft; 
+	//console.log(':: position: '+state+' :' + position);
+}
+
+
+
+function loadIF(id,  w, h) {
+		urlPath = 'banner_id='+abd_banner_id+'&abd_media_domain='+abd_media_domain+'&abd_click_url='+abd_click_url+'&url_web='+abd_website_url;
+
+	encodedString = Base64.encode(urlPath);
+	
+	htmlBG="";
+	html = '<iframe id="'+id+'" src="'+abd_media_domain+"/"+abd_banner_path+"/"+'index_iframe.html?'+encodedString+'" style="border:0;  z-index: 999999999999999; width: '+w+'px; height: '+h+'px; position:fixed; "></iframe>';
+	
+	if (bgColor != "")
+	{
+		if(bgAlpha == "") bgAlpha = 0;
+		htmlBG = '<div id="adbBgOverlay" style= "padding:0 0 0px; background: ' + bgColor + '; opacity: ' + bgAlpha + ';filter: alpha(opacity=' + (bgAlpha * 100) + '); position: fixed; top: 0px; right: 0px; width: 100%; height: 100%; z-index: 99999999; "></div>';
+	}
+	
+	document.write(htmlBG + html);
+	ifDiv = document.getElementById(divHTML5);
+	if (bgColor != "")
+		bgDiv = document.getElementById("adbBgOverlay");
+}
+
+window.onresize = function(event) {
+  	setPositionBanner();
+}
+
+function trackingAbdVideoMetrics_html5(abd_bid, duration, value) {
+    try {
+        var abdFn = "trackingAbdVideoMetrics" + abd_bid;
+        window[abdFn](duration, value);
+    } catch (e) {
+        console.log('::trackingAbdVideoMetrics::' + abd_bid + '::' + duration + ":" + value);
+    }
+
+}
+
+function trackingAbdInteraction_html5(abd_bid, name, redirect) {
+    try {
+        var abdFn = "trackingAbdInteraction" + abd_bid;
+        window[abdFn](name, redirect);
+    } catch (e) {
+        console.log(':: trackingAbdInteraction::' + abd_bid + ":::" + name + ":" + redirect);
+    }
+
+}
+
+function trackingAbdClick3rd_IFRAME(abd_bid) {
+    try {
+        var abdFn = "trackingAbdClick3rd" + abd_bid;
+        window[abdFn]();
+    } catch (e) {
+        console.log(':: trackingAbdClick3rd::' + abd_bid);
+    }
+}
+function MaxBanner_html5(abd_bid) {
+   if (ifDiv && divHTML5.indexOf(abd_bid) != -1){
+		state = "normal";
+		setPositionBanner();
+        ifDiv.style.width = wNormal + "px";
+        ifDiv.style.height = hNormal + "px";
+    }
+}
+
+function ExpandBanner_html5(abd_bid) {
+   if (ifDiv && divHTML5.indexOf(abd_bid) != -1){   
+		state = "expand";
+		setPositionBanner();
+		ifDiv.style.width = wExpand + "px";
+        ifDiv.style.height = hExpand + "px";
+    }
+}
+
+function MinBanner_html5(abd_bid) {
+    if (ifDiv && divHTML5.indexOf(abd_bid) != -1){
+		state = "min";
+		setPositionBanner();
+		ifDiv.style.width = wMin + "px";
+        ifDiv.style.height = hMin + "px";
+    }
+}
+
+function CloseBanner_html5(abd_bid) {
+	 if (ifDiv && divHTML5.indexOf(abd_bid) != -1){
+		state = "";
+		if (bgColor != "")
+			bgDiv.style.display = "none";
+		var div = ifDiv;
+		ifDiv.parentNode.removeChild(ifDiv);
+	}
+}
+
+function listen() {
+    var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+    var eventer = window[eventMethod];
+    var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+
+    eventer(messageEvent, function(e) {
+        var key = e.message ? "message" : "data";
+        var data = e[key];
+        if (data.func_type == "CloseBanner_html5") {
+            CloseBanner_html5(data.param1);
+        };
+		if (data.func_type == "ExpandBanner_html5") {
+            ExpandBanner_html5(data.param1);
+        };
+		if (data.func_type == "MinBanner_html5") {
+            MinBanner_html5(data.param1);
+        };
+		if (data.func_type == "MaxBanner_html5") {
+            MaxBanner_html5(data.param1);
+        };		
+        if (data.func_type == "trackingAbdVideoMetrics_html5") {
+            trackingAbdVideoMetrics_html5(data.param1, data.param2, data.param3);
+        };
+        if (data.func_type == "trackingAbdInteraction_html5") {
+            trackingAbdInteraction_html5(data.param1, data.param2, data.param3);
+        };
+        if (data.func_type == "trackingAbdClick3rd_IFRAME") {
+            trackingAbdClick3rd_IFRAME(data.param1);
+        };
+    }, false);
+}

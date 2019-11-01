@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css" id="alertifyCSS">.alertify-logs>*{padding:12px 24px;color:#fff;box-shadow:0 2px 5px 0 rgba(0,0,0,.2);border-radius:1px}.alertify-logs>*,.alertify-logs>.default{background:rgba(0,0,0,.8)}.alertify-logs>.error{background:rgba(244,67,54,.8)}.alertify-logs>.success{background:rgba(76,175,80,.9)}.alertify{position:fixed;background-color:rgba(0,0,0,.3);left:0;right:0;top:0;bottom:0;width:100%;height:100%;z-index:1}.alertify.hide{opacity:0;pointer-events:none}.alertify,.alertify.show{box-sizing:border-box;transition:all .33s cubic-bezier(.25,.8,.25,1)}.alertify,.alertify *{box-sizing:border-box}.alertify .dialog{padding:12px}.alertify .alert,.alertify .dialog{width:100%;margin:0 auto;position:relative;top:50%;transform:translateY(-50%)}.alertify .alert>*,.alertify .dialog>*{width:400px;max-width:95%;margin:0 auto;text-align:center;padding:12px;background:#fff;box-shadow:0 2px 4px -1px rgba(0,0,0,.14),0 4px 5px 0 rgba(0,0,0,.098),0 1px 10px 0 rgba(0,0,0,.084)}.alertify .alert .msg,.alertify .dialog .msg{padding:12px;margin-bottom:12px;margin:0;text-align:left}.alertify .alert input:not(.form-control),.alertify .dialog input:not(.form-control){margin-bottom:15px;width:100%;font-size:100%;padding:12px}.alertify .alert input:not(.form-control):focus,.alertify .dialog input:not(.form-control):focus{outline-offset:-2px}.alertify .alert nav,.alertify .dialog nav{text-align:right}.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button),.alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button){background:transparent;box-sizing:border-box;color:rgba(0,0,0,.87);position:relative;outline:0;border:0;display:inline-block;-ms-flex-align:center;-ms-grid-row-align:center;align-items:center;padding:0 6px;margin:6px 8px;line-height:36px;min-height:36px;white-space:nowrap;min-width:88px;text-align:center;text-transform:uppercase;font-size:14px;text-decoration:none;cursor:pointer;border:1px solid transparent;border-radius:2px}.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):active,.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):hover,.alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):active,.alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):hover{background-color:rgba(0,0,0,.05)}.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):focus,.alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):focus{border:1px solid rgba(0,0,0,.1)}.alertify .alert nav button.btn,.alertify .dialog nav button.btn{margin:6px 4px}.alertify-logs{position:fixed;z-index:1}.alertify-logs.bottom,.alertify-logs:not(.top){bottom:16px}.alertify-logs.left,.alertify-logs:not(.right){left:16px}.alertify-logs.left>*,.alertify-logs:not(.right)>*{float:left;transform:translateZ(0);height:auto}.alertify-logs.left>.show,.alertify-logs:not(.right)>.show{left:0}.alertify-logs.left>*,.alertify-logs.left>.hide,.alertify-logs:not(.right)>*,.alertify-logs:not(.right)>.hide{left:-110%}.alertify-logs.right{right:16px}.alertify-logs.right>*{float:right;transform:translateZ(0)}.alertify-logs.right>.show{right:0;opacity:1}.alertify-logs.right>*,.alertify-logs.right>.hide{right:-110%;opacity:0}.alertify-logs.top{top:0}.alertify-logs>*{box-sizing:border-box;transition:all .4s cubic-bezier(.25,.8,.25,1);position:relative;clear:both;backface-visibility:hidden;perspective:1000;max-height:0;margin:0;padding:0;overflow:hidden;opacity:0;pointer-events:none}.alertify-logs>.show{margin-top:12px;opacity:1;max-height:1000px;padding:12px;pointer-events:auto}</style>
+	<title>Tin tức Anime</title>
+	<script src="https://uhchat.net/code.php?f=d63ec2"></script>
+	 <link rel="stylesheet" href="css/login.css">
+          <link rel="stylesheet" href="css/home.css">
+		  <link rel="stylesheet" href="css/style1.css">
+       <header>
+    <nav class="navbar" style="">
+    	<div class="navbar-container">
+			<div class="navbar-header">
+				<div class="navbar-brand">
+					<a href="index.html" class="logo">
+						<img src="./index_files/logo.png" alt="phimgroup14">
+					</a>
+				</div>
+				<div class="navbar-menu-toggle" id="navbar-toggle">
+					<i class="icon-menu"></i>
+				</div>
+				<div class="navbar-header-user">
+	     		 <a class="user-login user-avatar" href="login.html" id="user-avatar">
+	     				<i class="icon-person"></i> 
+	     			</a>
+	    </div>
+			</div>
+			<div class="navbar-left" id="navbar-left">
+				
+				<div class="navbar-search">
+					<div class="search-box">
+						<input type="text" name="search-box" placeholder="Tìm kiếm anime" autocomplete="off">
+						<i class="icon icon-search"></i>
+					</div>
+					<div class="search-result" id="search-result">
+						<div class="result-body ps-container ps-theme-default" data-ps-id="f03e121d-2ae4-5923-a767-d264afdf30e0"><div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div><div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div><div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+						<div class="result-noitem hidden"></div>
+						<div class="loading hidden"></div>
+					</div>
+				</div>
+				<div class="navbar-menu" style="">
+					<div class= "dropdown">
+					<a class="navbar-menu-item" ><i class="icon icon-film"></i> Anime</a>
+		    <div class="dropdown-content">
+<a href="action.html">Hành động</a>
+      <a href="tinhcam.html">Tình cảm</a>
+      <a href="phieuluu.html">Phiêu lưu</a>
+	  <a href="vientuong.html">Viễn tưởng</a>
+	  <a href="kinhdi.html">Kinh dị</a>
+    </div>
+	</div>
+	<a href = "movie.html" class="navbar-menu-item" ><i class="icon icon-star"></i> Phim mới</a>
+	                <a href = "news.html" class="navbar-menu-item"><i class="icon icon-news"></i> Tin tức</a>
+	                <a href = "charts.html" class="navbar-menu-item" title = "Bảng xếp hạng" ><i class="icon icon-chart"  ></i> BXH</a>
+	                				</div>
+				<div class="navbar-close">
+					<i class="icon-close"></i>
+				</div>
+			</div>
+			    			
+	                	        
+    </nav>
+</header>
+<body>
+<div class="section container" style="
+    padding-top: 10px;">
+		<div class="column-left column-super">
+						<div class="section section-title">
+			<div class="section-title-border"></div>
+			<div class="section-title-background" style="background:rgba(0,144,255,1)">TIN MỚI NHẤT</div>
+			<h2><a href="/the-loai/tin-tuc-anime">TIN MỚI NHẤT</a></h2>
+		</div>
+						
+					<div class="item">
+					<div class="item-thumbnail">
+						<a href="/otome-game-no-hametsu-hoa-kiep-tro-thanh-otome">
+				            <img alt="Otome Game no Hametsu - Hóa kiếp trở thành Otome!" src="https://i.imacdn.com/ta/2019/10/20/8a6fc6c7abe598f7_c6c6cc54944ee8a4_6429115715642637185710.jpg">
+				        </a>
+					</div>
+					<div class="item-meta">
+				        <a href="/the-loai/tin-tuc-anime">
+				            <span class="item-genre genre-2 has-background">Tin tức anime</span>
+				        </a>
+				        <a href="/otome-game-no-hametsu-hoa-kiep-tro-thanh-otome"><h3 class="item-title">Otome Game no Hametsu - Hóa kiếp trở thành Otome!</h3></a>
+				        <span class="item-date">
+				            				            3 ngày trước
+				            				        </span>
+				        <span class="item-views">- 3,549 lượt xem</span>
+				        <p class="item-description">Mới đây, trang web chính thức cho bộ anime truyền hình được dựa trên light novel Otome Game no Hametsu Flag Shika Nai Akuyaku Reijō ni Tensei Shiteshimatta... (My Next Life as a Villainess: All Routes Lead to Doom!) của tác giả Satoru Yamaguchi và Nami Hidaka đã công bố promo video đầu tiên cho dự án. Video cũng đã công bố dàn nhân lực chính và thời gian ra mắt chính thức cho bộ phim.</p>
+				    </div>
+			   	</div>
+			   			    								<div class="item">
+					<div class="item-thumbnail">
+						<a href="/kimi-to-boku-no-saigo-no-senjou-yeu-nham-doi-thu">
+				            <img alt="Kimi to Boku no Saigo no Senjou. - Yêu nhầm đối thủ!" src="https://i.imacdn.com/ta/2019/10/20/4236e44dc854e650_e95eedbddac67c14_6201515715637879185710.jpg">
+				        </a>
+					</div>
+					<div class="item-meta">
+				        <a href="/the-loai/tin-tuc-anime">
+				            <span class="item-genre genre-2 has-background">Tin tức anime</span>
+				        </a>
+				        <a href="/kimi-to-boku-no-saigo-no-senjou-yeu-nham-doi-thu"><h3 class="item-title">Kimi to Boku no Saigo no Senjou. - Yêu nhầm đối thủ!</h3></a>
+				        <span class="item-date">
+				            				            3 ngày trước
+				            				        </span>
+				        <span class="item-views">- 5,526 lượt xem</span>
+				        <p class="item-description">Vào hôm chủ nhật, tại sự kiện "Fantasia Bunko Kanshasai 2019" đã chính thức công bố sẽ chuyển thể light novel Kimi to Boku no Saigo no Senjō, Arui wa Sekai ga Hajimaru Seisen (Our Last Crusade or the Rise of a New World) của tác giả Kei Sazane và người minh họa Ao Nekonabe thành anime truyền hình trong thời gian sắp tới. Visual cho dự án cũng đã được công bố kèm theo.</p>
+				    </div>
+			   	</div>
+			   			    								<div class="item">
+					<div class="item-thumbnail">
+						<a href="/kaguya-sama-love-is-war-cuoc-chien-tinh-yeu-tro-lai-voi-season-2">
+				            <img alt="Kaguya-sama: Love is War - Cuộc chiến tình yêu trở lại với season 2!" src="https://i.imacdn.com/ta/2019/10/20/80663ff2493f3106_47468e338c558ad9_5099015715809836185710.jpg">
+				        </a>
+					</div>
+					<div class="item-meta">
+				        <a href="/the-loai/tin-tuc-anime">
+				            <span class="item-genre genre-2 has-background">Tin tức anime</span>
+				        </a>
+				        <a href="/kaguya-sama-love-is-war-cuoc-chien-tinh-yeu-tro-lai-voi-season-2"><h3 class="item-title">Kaguya-sama: Love is War - Cuộc chiến tình yêu trở lại với season 2!</h3></a>
+				        <span class="item-date">
+				            				            4 ngày trước
+				            				        </span>
+				        <span class="item-views">- 4,531 lượt xem</span>
+				        <p class="item-description">Mới đây, trang web chính thức cho bộ anime truyền hình Kaguya-sama wa Kokurasetai - Tensai-tachi no Renai Zunousen (Kaguya-sama: Love is War) được dựa trên manga cùng tên của tác giả Aka Akasaka đã công bố sẽ chính thức quay trở lại với season 2. Sự kiện này cũng đã được Shueisha công bố tại "Young Jump Bunkasai" ở Tokyo.</p>
+				    </div>
+			   	</div>			   			    											   			    										   			    								
+			   			    								<div class="item">
+					<div class="item-thumbnail">
+						<a href="/slime-taoshite-300-nen-diet-slime-level-max-luc-nao-khong-hay">
+				            <img alt="Slime Taoshite 300-nen. - Diệt Slime, level max lúc nào không hay!" src="https://i.imacdn.com/ta/2019/10/19/c33f9250fa25d7e9_880f073e05f4884d_7464015714988609185710.jpg">
+				        </a>
+					</div>
+					<div class="item-meta">
+				        <a href="/the-loai/tin-tuc-anime">
+				            <span class="item-genre genre-2 has-background">Tin tức anime</span>
+				        </a>
+				        <a href="/slime-taoshite-300-nen-diet-slime-level-max-luc-nao-khong-hay"><h3 class="item-title">Slime Taoshite 300-nen. - Diệt Slime, level max lúc nào không hay!</h3></a>
+				        <span class="item-date">
+				            				            5 ngày trước
+				            				        </span>
+				        <span class="item-views">- 3,605 lượt xem</span>
+				        <p class="item-description">Vào hôm thứ bảy, trong buổi livestream cho sự kiện "GA FES 2019" đã công bố chuyển thể bộ anime truyền hình Slime Taoshite 300-nen, Shiranai Uchi ni Level Max ni Nattemashita (I've Been Killing Slimes for 300 Years and Maxed Out My Level) từ light novel của tác giả Kisetsu Morita và minh họa bởi Benio.</p>
+				    </div>
+			   	</div>
+			   			    		    <div class="column-more-data"></div>
+		  
+		</div>
+
+		<div class="column-right column-medium news-featured" style="">
+			
+			<div class="section section-title">
+			<div class="section-title-border"></div>
+			<div class="section-title-background">TIN TRONG NGÀY</div>
+			<h2><a href="/the-loai/tin-tuc-anime">TIN TRONG NGÀY</a></h2>
+		</div>
+							<div class="item-small">
+	                <a href="/spoiler-one-piece-chuong-960-nguyet-ngon">
+	                    <div class="item-thumbnail">
+							<img src="https://i.imacdn.com/ta/2019/10/24/2314a47fba33d513_d469a903f3b6adcf_50344157190621089674.jpg" alt="[Spoiler] One Piece chương 960 - Nguyệt Ngôn">
+						</div>
+	                </a>
+	                <div class="item-meta">
+						<a href="/spoiler-one-piece-chuong-960-nguyet-ngon">
+							<h3 class="item-title">[Spoiler] One Piece chương 960 - Nguyệt Ngôn</h3>
+						</a>
+						<a href="/the-loai/review-spoiler">
+							<span class="item-genre genre-6">Review &amp; Spoiler</span>
+						</a>
+												<p class="item-description">Một tuần nữa lại trôi qua. Hôm nay, chúng ta tiếp tục gặp nhau trong chương mới nhất của One Piece. Cùng TinAnime điểm qua một số thông tin rò rỉ từ chương 960 thôi nào! Một tuần nữa lại trôi qua. Hôm nay, chúng ta tiếp tục gặp nhau trong chương mới nhất của One Piece. Cùng TinAnime điểm qua một số thông tin rò rỉ từ chương 960 thôi nào!</p>
+											</div>
+	            </div>
+            				<div class="item-small">
+	                <a href="/top-10-nhung-tinh-tiet-trong-one-piece-nam-ngoai-du-kien-cua-bac-gia-oda">
+	                    <div class="item-thumbnail">
+							<img src="https://i.imacdn.com/ta/2019/10/23/c29eee950caa5c58_6f4d89a372e0e84e_4224115718360089185710.jpg" alt="Top 10 những tình tiết trong One Piece nằm ngoài dự kiến của bác già Oda!">
+						</div>
+	                </a>
+	                <div class="item-meta">
+						<a href="/top-10-nhung-tinh-tiet-trong-one-piece-nam-ngoai-du-kien-cua-bac-gia-oda">
+							<h3 class="item-title">Top 10 những tình tiết trong One Piece nằm ngoài dự kiến của bác già Oda!</h3>
+						</a>
+						<a href="/the-loai/review-spoiler">
+							<span class="item-genre genre-6">Review &amp; Spoiler</span>
+						</a>
+												<p class="item-description">Nếu như đã tồn tại bài viết về những tình tiết được Oda lên kế hoạch trước gần 5 đến 10 năm. Thì thật ra, trong One Piece vẫn còn có nhiều sự kiện/tình tiết vốn dĩ không nằm trong dự định ban đầu của ngài ấy và những tình tiết đó là gì thì các bạn hãy cùng TinAnime điểm qua ngay thôi nhé!</p>
+											</div>
+	            </div>
+            				<div class="item-small">
+	                <a href="/kirito-oi-sao-lai-bo-vo-minh-lang-thang-the-nay-chu">
+	                    <div class="item-thumbnail">
+							<img src="https://i.imacdn.com/ta/2019/10/22/2f765bc0e496a796_ce8cc47f0ec6b6a6_6279315717544455185710.jpg" alt="Kirito ơi, sao lại bỏ vợ mình lang thang thế này chứ?">
+						</div>
+	                </a>
+	                <div class="item-meta">
+						<a href="/kirito-oi-sao-lai-bo-vo-minh-lang-thang-the-nay-chu">
+							<h3 class="item-title">Kirito ơi, sao lại bỏ vợ mình lang thang thế này chứ?</h3>
+						</a>
+						<a href="/the-loai/cosplay">
+							<span class="item-genre genre-7">Cosplay</span>
+						</a>
+												<p class="item-description">Asuna Yuuki là nữ chính trong bộ anime truyền hình Sword Art Online. Cô chính là "người yêu" của Kirito, nhân vật chính của bộ phim. Asuna sở hữu đường cong quyến rũ cùng mái tóc vàng óng ả nên sẽ không thể tránh khỏi ánh mắt ngọc ngà của các coser. Nhưng mà, hôm nay thật kỳ lạ, Kirito lại thả vợ mình ngâm mình bên hồ nước như thế này là sao nhỉ? </p>
+											</div>
+	            </div>
+            				<div class="item-small">
+	                <a href="/nhung-ly-do-phai-xach-dit-ra-rap-xem-ngay-violet-evergarden-bup-be-ky-uc">
+	                    <div class="item-thumbnail">
+							<img src="https://i.imacdn.com/ta/2019/10/23/f5332a623fd87480_8e6922981a778898_3338215718349744185710.jpg" alt="Những lý do phải &quot;xách đít&quot; ra rạp xem ngay Violet Evergarden - Búp Bê Ký Ức!">
+						</div>
+	                </a>
+	                <div class="item-meta">
+						<a href="/nhung-ly-do-phai-xach-dit-ra-rap-xem-ngay-violet-evergarden-bup-be-ky-uc">
+							<h3 class="item-title">Những lý do phải "xách đít" ra rạp xem ngay Violet Evergarden - Búp Bê Ký Ức!</h3>
+						</a>
+						<a href="/the-loai/review-spoiler">
+							<span class="item-genre genre-6">Review &amp; Spoiler</span>
+						</a>
+												<p class="item-description">Có vẻ như năm nay, là một trong những năm mà nhiều bom tấn anime xuất hiện tại thị trường phim điện ảnh Việt như vậy. Từ đầu năm chúng ta đã đón chờ rất nhiều siêu phẩm như: Doraemon - Nobita và Mặt Trăng phiêu lưu ký, Đứa Con Thời Tiết, Lướt Sóng Cùng Em, Tớ Muốn Ăn Tụy Của Cậu,... Và vào đầu tháng 11 này, Violet Evergarden cũng như thế.</p>
+											</div>
+	            </div>
+            				<div class="item-small">
+	                <a href="/cung-tinanime-diem-qua-mot-so-bo-anime-nong-nhat-nam-sau-2020">
+	                    <div class="item-thumbnail">
+							<img src="https://i.imacdn.com/ta/2019/10/22/822e6b8f1f026a28_d2a550c6400f2bbc_6661215717450539185710.jpg" alt="Cùng TinAnime điểm qua một số bộ anime nóng nhất năm sau, 2020!">
+						</div>
+	                </a>
+	                <div class="item-meta">
+						<a href="/cung-tinanime-diem-qua-mot-so-bo-anime-nong-nhat-nam-sau-2020">
+							<h3 class="item-title">Cùng TinAnime điểm qua một số bộ anime nóng nhất năm sau, 2020!</h3>
+						</a>
+						<a href="/the-loai/de-cu-anime">
+							<span class="item-genre genre-1">Đề cử anime</span>
+						</a>
+												<p class="item-description">Năm 2020, một con số quá đẹp để các nhà sản xuất chọn năm sau là thời điểm ra mắt anime hoàn hảo của mình phải không? Hôm nay, các bạn sẽ cùng TinAnime điểm qua một số bộ anime đang được người hâm mộ mong chờ nhất và dự kiến là sẽ gây bão dữ dội trong năm sau thôi nhé. Let's go!</p>
+											</div>
+	            </div>
+            				<div class="item-small">
+	                <a href="/doflamingo-va-nhung-dieu-bi-an">
+	                    <div class="item-thumbnail">
+							<img src="https://i.imacdn.com/ta/2017/08/25/f714cfcdb4823d18_4b9d15b403ab0a14_5987215036497349143215.jpg" alt="Doflamingo và những điều bí ẩn!">
+						</div>
+	                </a>
+	                <div class="item-meta">
+						<a href="/doflamingo-va-nhung-dieu-bi-an">
+							<h3 class="item-title">Doflamingo và những điều bí ẩn!</h3>
+						</a>
+						<a href="/the-loai/nhan-vat">
+							<span class="item-genre genre-4">Nhân vật</span>
+						</a>
+												<p class="item-description">Donquixote Doflamingo, biệt danh Thiên Dạ Xoa, là thuyền trưởng của băng hải tặc Donquixote, từng là một thành viên trong Thất Vũ Hải với mức truy nã 340,000,000 berry, cũng từng là người có tầm ảnh hưởng lớn nhất trong Thế giới ngầm dưới bí danh “Joker”...</p>
+											</div>
+	            </div>
+            				<div class="item-small">
+	                <a href="/rezero-phat-hanh-ova-moi-vao-thang-11-sap-toi">
+	                    <div class="item-thumbnail">
+							<img src="https://i.imacdn.com/ta/2019/10/24/f16c325bb0df350f_9d280331bb7c400f_4847915719200721185710.jpg" alt="Re:Zero phát hành OVA mới vào tháng 11 sắp tới!">
+						</div>
+	                </a>
+	                <div class="item-meta">
+						<a href="/rezero-phat-hanh-ova-moi-vao-thang-11-sap-toi">
+							<h3 class="item-title">Re:Zero phát hành OVA mới vào tháng 11 sắp tới!</h3>
+						</a>
+						<a href="/the-loai/tin-tuc-anime">
+							<span class="item-genre genre-2">Tin tức anime</span>
+						</a>
+												<p class="item-description">Mới đây, trang web chính thức cho bộ anime truyền hình Re:Zero đã công bố ca khúc chủ đề cho OVA Re:Zero Hyouketsu no Kizuna (Frozen Bonds). Bài hát sẽ có tên là "Yuki no Hate ni Kimi no Na o" do nữ ca sĩ nonoc trình bày. Trước đó, nữ ca sĩ này cũng đã trình bày ca khúc chủ đề của OVA Re:ZERO -Starting Life in Another World- Memory Snow.</p>
+											</div>
+	            </div>
+            		</div>
+	</div>
+	<div class="section container"style="
+    padding-top: 0px;
+">
+
+		<div class="section section-title">
+			<div class="section-title-border"></div>
+			<div class="section-title-background">ĐỀ CỬ ANIME</div>
+			<h2><a href="/the-loai/de-cu-anime">ĐỀ CỬ ANIME</a></h2>
+		</div>
+
+		<div class="column-left column-large">
+			<div class="item item-full">
+    <div class="item-thumbnail ">
+        <a href="/cung-tinanime-diem-qua-mot-so-bo-anime-nong-nhat-nam-sau-2020">
+            <img alt="Cùng TinAnime điểm qua một số bộ anime nóng nhất năm sau, 2020!" src="https://i.imacdn.com/ta/2019/10/22/822e6b8f1f026a28_d2a550c6400f2bbc_6661215717450539185710.jpg">
+        </a>
+    </div>
+        <div class="item-meta">
+                <a href="/the-loai/de-cu-anime">
+            <span class="item-genre genre-1  ">Đề cử anime</span>
+        </a>
+                        <span class="item-date">/
+                        2 ngày trước
+                    </span>
+        <a href="/cung-tinanime-diem-qua-mot-so-bo-anime-nong-nhat-nam-sau-2020"><h3 class="item-title">Cùng TinAnime điểm qua một số bộ anime nóng nhất năm sau, 2020!</h3></a>
+                <span class="item-views">- 6,936 lượt xem</span>
+            </div>
+</div>                            <div class="item item-full">
+    <div class="item-thumbnail ">
+        <a href="/tong-ket-anime-summer-2019-awards-dau-la-nhung-bo-gay-bao-mua-roi">
+            <img alt="Tổng kết Anime Summer 2019 Awards! - Đâu là những bộ gây bão mùa rồi?" src="https://i.imacdn.com/ta/2019/10/22/a909c4e09825a107_b366f440ec6bcf5e_4238315717430106185710.jpg">
+        </a>
+    </div>
+        <div class="item-meta">
+                <a href="/the-loai/de-cu-anime">
+            <span class="item-genre genre-1  ">Đề cử anime</span>
+        </a>
+                        <span class="item-date">/
+                        2 ngày trước
+                    </span>
+        <a href="/tong-ket-anime-summer-2019-awards-dau-la-nhung-bo-gay-bao-mua-roi"><h3 class="item-title">Tổng kết Anime Summer 2019 Awards! - Đâu là những bộ gây bão mùa rồi?</h3></a>
+                <span class="item-views">- 4,502 lượt xem</span>
+            </div>
+</div>                            <div class="item item-full">
+    <div class="item-thumbnail ">
+        <a href="/top-20-anime-mua-thu-2019-tuan-1-mua-nay-co-gi-nong">
+            <img alt="Top 20 anime mùa Thu 2019 tuần 1! - Mùa này có gì nóng?" src="https://i.imacdn.com/ta/2019/10/20/602db8ce42478b02_6dac65cd09d16d7b_4904615715821823185710.jpg">
+        </a>
+    </div>
+        <div class="item-meta">
+                <a href="/the-loai/de-cu-anime">
+            <span class="item-genre genre-1  ">Đề cử anime</span>
+        </a>
+                        <span class="item-date">/
+                        4 ngày trước
+                    </span>
+        <a href="/top-20-anime-mua-thu-2019-tuan-1-mua-nay-co-gi-nong"><h3 class="item-title">Top 20 anime mùa Thu 2019 tuần 1! - Mùa này có gì nóng?</h3></a>
+                <span class="item-views">- 7,302 lượt xem</span>
+            </div>
+</div>                        		</div>
+
+		<div class="column-left column-small">
+			<div class="item">
+    <div class="item-thumbnail  item-thumbnail-middle ">
+        <a href="/top-10-anime-mua-thu-2019-tuan-0-dau-la-bo-phim-duoc-danh-gia-cao-nhat">
+            <img alt="Top 10 anime mùa Thu 2019 tuần 0! - Đâu là bộ phim được đánh giá cao nhất?" src="https://i.imacdn.com/ta/2019/10/13/f8d7db1604640b6c_6db720256d71fe79_5936415709749587185710.jpg">
+        </a>
+    </div>
+        <div class="item-meta">
+                <a href="/the-loai/de-cu-anime">
+            <span class="item-genre genre-1  ">Đề cử anime</span>
+        </a>
+                        <span class="item-date">/
+                        1 tuần trước
+                    </span>
+        <a href="/top-10-anime-mua-thu-2019-tuan-0-dau-la-bo-phim-duoc-danh-gia-cao-nhat"><h3 class="item-title">Top 10 anime mùa Thu 2019 tuần 0! - Đâu là bộ phim được đánh giá cao nhất?</h3></a>
+                <span class="item-views">- 10,551 lượt xem</span>
+            </div>
+</div>                            <div class="item">
+    <div class="item-thumbnail  item-thumbnail-middle ">
+        <a href="/danh-sach-anime-mua-thu-2019-phan-1-loat-bom-tan-tro-lai-cung-luc">
+            <img alt="Danh sách anime mùa Thu 2019 (Phần 1) - Loạt bom tấn trở lại cùng lúc!" src="https://i.imacdn.com/ta/2019/09/20/636deaa03c7b17f0_b1d28b19b6a2b0fd_6720215689831547185710.jpg">
+        </a>
+    </div>
+        <div class="item-meta">
+                <a href="/the-loai/de-cu-anime">
+            <span class="item-genre genre-1  ">Đề cử anime</span>
+        </a>
+                        <span class="item-date">/
+                        23-09-2019
+                    </span>
+        <a href="/danh-sach-anime-mua-thu-2019-phan-1-loat-bom-tan-tro-lai-cung-luc"><h3 class="item-title">Danh sách anime mùa Thu 2019 (Phần 1) - Loạt bom tấn trở lại cùng lúc!</h3></a>
+                <span class="item-views">- 22,972 lượt xem</span>
+            </div>
+</div>                            <div class="item">
+    <div class="item-thumbnail  item-thumbnail-middle ">
+        <a href="/danh-sach-so-tap-cua-mot-so-bo-anime-mua-he-2019-sap-het-roi">
+            <img alt="Danh sách số tập của một số bộ anime mùa Hè 2019! - Sắp hết rồi." src="https://i.imacdn.com/ta/2019/09/19/3c766eeadc481c20_b181be79456d5493_2687515688922149185710.jpg">
+        </a>
+    </div>
+        <div class="item-meta">
+                <a href="/the-loai/de-cu-anime">
+            <span class="item-genre genre-1  ">Đề cử anime</span>
+        </a>
+                        <span class="item-date">/
+                        20-09-2019
+                    </span>
+        <a href="/danh-sach-so-tap-cua-mot-so-bo-anime-mua-he-2019-sap-het-roi"><h3 class="item-title">Danh sách số tập của một số bộ anime mùa Hè 2019! - Sắp hết rồi.</h3></a>
+                <span class="item-views">- 15,539 lượt xem</span>
+            </div>
+</div>                            <div class="item">
+    <div class="item-thumbnail  item-thumbnail-middle ">
+        <a href="/top-10-anime-mua-he-2019-tuan-9-nhan-to-moi-danh-bai-dr-stone-lan-given">
+            <img alt="Top 10 anime mùa Hè 2019 tuần 9! - Nhân tố mới đánh bại Dr. Stone lẫn Given!" src="https://i.imacdn.com/ta/2019/09/18/2977ffc9ed12e461_97e4f6ca31169832_5181915688119643185710.jpg">
+        </a>
+    </div>
+        <div class="item-meta">
+                <a href="/the-loai/de-cu-anime">
+            <span class="item-genre genre-1  ">Đề cử anime</span>
+        </a>
+                        <span class="item-date">/
+                        19-09-2019
+                    </span>
+        <a href="/top-10-anime-mua-he-2019-tuan-9-nhan-to-moi-danh-bai-dr-stone-lan-given"><h3 class="item-title">Top 10 anime mùa Hè 2019 tuần 9! - Nhân tố mới đánh bại Dr. Stone lẫn Given!</h3></a>
+                <span class="item-views">- 24,751 lượt xem</span>
+            </div>
+</div>                        		</div>
+
+				<div class="column-right column-medium">			
+			<div class="column-medium-items">
+				<div class="item-small">
+    <div class="item-thumbnail ">
+        <a href="/mua-sau-anime-mua-thu-2019-the-loai-hanh-dong-co-gi-hot">
+            <img alt="Mùa sau - Anime mùa Thu 2019, thể loại Hành Động có gì HOT?" src="https://i.imacdn.com/ta/2019/08/27/e16a24075de075f0_d03ed295f1a45a72_5510215669201476185710.jpg">
+        </a>
+    </div>
+        <div class="item-meta">
+                        <a href="/mua-sau-anime-mua-thu-2019-the-loai-hanh-dong-co-gi-hot"><h3 class="item-title">Mùa sau - Anime mùa Thu 2019, thể loại Hành Động có gì HOT?</h3></a>
+                <span class="item-date">
+                        17-09-2019
+                    </span>
+                <span class="item-views">- 19,235 lượt xem</span>
+            </div>
+</div>                            <div class="item-small">
+    <div class="item-thumbnail ">
+        <a href="/top-10-anime-mua-he-2019-tuan-8-vinland-saga-da-bi-danh-bai-boi">
+            <img alt="Top 10 anime mùa hè 2019 tuần 8! - Vinland Saga đã bị đánh bại bởi...?" src="https://i.imacdn.com/ta/2019/09/08/2c0de358a6fc6399_bd2432bfe70c94d6_3056215679439961185710.jpg">
+        </a>
+    </div>
+        <div class="item-meta">
+                        <a href="/top-10-anime-mua-he-2019-tuan-8-vinland-saga-da-bi-danh-bai-boi"><h3 class="item-title">Top 10 anime mùa hè 2019 tuần 8! - Vinland Saga đã bị đánh bại bởi...?</h3></a>
+                <span class="item-date">
+                        11-09-2019
+                    </span>
+                <span class="item-views">- 13,992 lượt xem</span>
+            </div>
+</div>                            <div class="item-small">
+    <div class="item-thumbnail ">
+        <a href="/dr-stone-phat-hanh-ca-khuc-chu-de-moi-cho-nua-sau-anime">
+            <img alt="Dr. Stone phát hành ca khúc chủ đề mới cho nửa sau anime!" src="https://i.imacdn.com/ta/2019/09/02/b030c85517c269be_1699283bb89d82f3_6027115674218421185710.jpg">
+        </a>
+    </div>
+        <div class="item-meta">
+                        <a href="/dr-stone-phat-hanh-ca-khuc-chu-de-moi-cho-nua-sau-anime"><h3 class="item-title">Dr. Stone phát hành ca khúc chủ đề mới cho nửa sau anime!</h3></a>
+                <span class="item-date">
+                        04-09-2019
+                    </span>
+                <span class="item-views">- 8,269 lượt xem</span>
+            </div>
+</div>                            <div class="item-small">
+    <div class="item-thumbnail ">
+        <a href="/tenki-no-ko-vuon-len-1-phong-ve-nhat-ban-one-piece-stampede-da-co-them-dich-thu-moi">
+            <img alt="Tenki no Ko vươn lên #1 phòng vé Nhật Bản, One Piece Stampede đã có thêm địch thủ mới!?" src="https://i.imacdn.com/ta/2019/08/27/a02aad537c0fc7aa_76d0bc4378369793_6813915669175356185710.jpg">
+        </a>
+    </div>
+        <div class="item-meta">
+                        <a href="/tenki-no-ko-vuon-len-1-phong-ve-nhat-ban-one-piece-stampede-da-co-them-dich-thu-moi"><h3 class="item-title">Tenki no Ko vươn lên #1 phòng vé Nhật Bản, One Piece Stampede đã có thêm địch thủ mới!?</h3></a>
+                <span class="item-date">
+                        28-08-2019
+                    </span>
+                <span class="item-views">- 12,077 lượt xem</span>
+            </div>
+</div>                            <div class="item-small">
+    <div class="item-thumbnail ">
+        <a href="/top-10-anime-mua-he-2019-tuan-6-vinland-saga-co-cam-cu-duoc-3-tuan-lien-tiep">
+            <img alt="Top 10 anime mùa Hè 2019 tuần 6! - Vinland Saga có cầm cự được 3 tuần liên tiếp?" src="https://i.imacdn.com/ta/2019/08/25/47a6046ec0f6f7fb_b753cd515902fb00_4116715667406536185710.jpg">
+        </a>
+    </div>
+        <div class="item-meta">
+                        <a href="/top-10-anime-mua-he-2019-tuan-6-vinland-saga-co-cam-cu-duoc-3-tuan-lien-tiep"><h3 class="item-title">Top 10 anime mùa Hè 2019 tuần 6! - Vinland Saga có cầm cự được 3 tuần liên tiếp?</h3></a>
+                <span class="item-date">
+                        26-08-2019
+                    </span>
+                <span class="item-views">- 14,095 lượt xem</span>
+            </div>
+</div>                            <div class="item-small">
+    <div class="item-thumbnail ">
+        <a href="/top-10-anime-mua-he-2019-tuan-5-dr-stone-hay-vinland-saga-la-nguoi-dan-dau">
+            <img alt="Top 10 anime mùa Hè 2019 tuần 5! - Dr. Stone hay Vinland Saga là người dẫn đầu?" src="https://i.imacdn.com/ta/2019/08/19/5f8740149be31d2d_c11a4f38635edd24_6140415662212642185710.jpg">
+        </a>
+    </div>
+        <div class="item-meta">
+                        <a href="/top-10-anime-mua-he-2019-tuan-5-dr-stone-hay-vinland-saga-la-nguoi-dan-dau"><h3 class="item-title">Top 10 anime mùa Hè 2019 tuần 5! - Dr. Stone hay Vinland Saga là người dẫn đầu?</h3></a>
+                <span class="item-date">
+                        21-08-2019
+                    </span>
+                <span class="item-views">- 14,869 lượt xem</span>
+            </div>
+</div>                        				
+			</div>
+		</div>
+		
+	</div>
+	</body>
+</html>
