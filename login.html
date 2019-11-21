@@ -81,7 +81,8 @@ function checkLogin() {
 	<div class="loginbox">
 		<img src="./index_files/avatar.png" class="avatar">
 		<h1>Login here</h1>
-		<form  >
+		<form action="index.html" method="get">
+
 			<p>Username</p>
 			<input type="text" id="user" placeholder="Enter Username" required="">
 			<p>Password</p>
@@ -94,6 +95,8 @@ function checkLogin() {
     font-size: 18px;
     border-radius: 20px;
 ">
+			<input type="password" name="" placeholder="Enter Password" required="">
+			<input formaction="/index.html" type="submit" value="Login" >
 			<a href="forgotpass.html">Lost your password?</a>
 			<a href="register.html"><span>Don't have an account?</span></a>
 		</form>
