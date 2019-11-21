@@ -5,10 +5,35 @@ $(function() {
    */
   'use strict';
   var data = {
-    labels: ["2013", "2014", "2014", "2015", "2016", "2017"],
+    labels: ["bleach", "one puch man", "dragon ball", "boruto", "one piece", "naruto"],	
     datasets: [{
-      label: '# of Votes',
-      data: [10, 19, 3, 5, 2, 3],
+      label: 'Lượt xem',
+      data: [40000, 80000, 90000, 150000, 180000, 190000],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(153, 102, 255, 0.2)',
+        'rgba(255, 159, 64, 0.2)'
+      ],
+      borderColor: [
+        'rgba(255,99,132,1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(153, 102, 255, 1)',
+        'rgba(255, 159, 64, 1)'
+      ],
+      borderWidth: 1,
+      fill: false
+    }]
+  };
+   var data1 = {
+    labels: ["baki", "black clover", "dragon ball", "gintama", "naruto", "one piece"],	
+    datasets: [{
+      label: 'Lượt thích',
+      data: [2000, 2800, 3500, 4500, 6000, 15000],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
@@ -268,8 +293,8 @@ $(function() {
     }
   }
   // Get context with jQuery - using jQuery's .get() method.
-  if ($(".barChart").length) {
-    var barChartCanvas = $(".barChart").get(0).getContext("2d");
+  if ($("#barChart1").length) {
+    var barChartCanvas = $("#barChart1").get(0).getContext("2d");
     // This will get the first returned node in the jQuery collection.
     var barChart = new Chart(barChartCanvas, {
       type: 'bar',
@@ -278,16 +303,16 @@ $(function() {
     });
   }
 
-  if ($(".lineChart").length) {
-    var lineChartCanvas = $(".lineChart").get(0).getContext("2d");
+  if ($("#barChart2").length) {
+    var lineChartCanvas = $("#barChart2").get(0).getContext("2d");
     var lineChart = new Chart(lineChartCanvas, {
-      type: 'line',
-      data: data,
+      type: 'bar',
+      data: data1,
       options: options
     });
   }
 
-  if ($(".linechart-multi").length) {
+  if ($("#linechart-multi").length) {
     var multiLineCanvas = $("#linechart-multi").get(0).getContext("2d");
     var lineChart = new Chart(multiLineCanvas, {
       type: 'line',
@@ -296,8 +321,8 @@ $(function() {
     });
   }
 
-  if ($(".areachart-multi").length) {
-    var multiAreaCanvas = $(".areachart-multi").get(0).getContext("2d");
+  if ($("#areachart-multi").length) {
+    var multiAreaCanvas = $("#areachart-multi").get(0).getContext("2d");
     var multiAreaChart = new Chart(multiAreaCanvas, {
       type: 'line',
       data: multiAreaData,
@@ -305,8 +330,8 @@ $(function() {
     });
   }
 
-  if ($(".doughnutChart").length) {
-    var doughnutChartCanvas = $(".doughnutChart").get(0).getContext("2d");
+  if ($("#doughnutChart").length) {
+    var doughnutChartCanvas = $("#doughnutChart").get(0).getContext("2d");
     var doughnutChart = new Chart(doughnutChartCanvas, {
       type: 'doughnut',
       data: doughnutPieData,
@@ -314,8 +339,8 @@ $(function() {
     });
   }
 
-  if ($(".pieChart").length) {
-    var pieChartCanvas = $(".pieChart").get(0).getContext("2d");
+  if ($("#pieChart").length) {
+    var pieChartCanvas = $("#pieChart").get(0).getContext("2d");
     var pieChart = new Chart(pieChartCanvas, {
       type: 'pie',
       data: doughnutPieData,
@@ -323,8 +348,8 @@ $(function() {
     });
   }
 
-  if ($(".areaChart").length) {
-    var areaChartCanvas = $(".areaChart").get(0).getContext("2d");
+  if ($("#areaChart").length) {
+    var areaChartCanvas = $("#areaChart").get(0).getContext("2d");
     var areaChart = new Chart(areaChartCanvas, {
       type: 'line',
       data: areaData,
@@ -332,8 +357,8 @@ $(function() {
     });
   }
 
-  if ($(".scatterChart").length) {
-    var scatterChartCanvas = $(".scatterChart").get(0).getContext("2d");
+  if ($("#scatterChart").length) {
+    var scatterChartCanvas = $("#scatterChart").get(0).getContext("2d");
     var scatterChart = new Chart(scatterChartCanvas, {
       type: 'scatter',
       data: scatterChartData,
@@ -341,177 +366,8 @@ $(function() {
     });
   }
 
-  if ($(".browserTrafficChart").length) {
-    var doughnutChartCanvas = $(".browserTrafficChart").get(0).getContext("2d");
-    var doughnutChart = new Chart(doughnutChartCanvas, {
-      type: 'doughnut',
-      data: browserTrafficData,
-      options: doughnutPieOptions
-    });
-  }
-
-
-  // Get context with jQuery - using jQuery's .get() method.
-  if ($(".barChart").length) {
-    var barChartCanvas = $(".barChart").get(1).getContext("2d");
-    // This will get the first returned node in the jQuery collection.
-    var barChart = new Chart(barChartCanvas, {
-      type: 'bar',
-      data: data,
-      options: options
-    });
-  }
-
-  if ($(".lineChart").length) {
-    var lineChartCanvas = $(".lineChart").get(1).getContext("2d");
-    var lineChart = new Chart(lineChartCanvas, {
-      type: 'line',
-      data: data,
-      options: options
-    });
-  }
-
-  if ($(".linechart-multi").length) {
-    var multiLineCanvas = $("#linechart-multi").get(1).getContext("2d");
-    var lineChart = new Chart(multiLineCanvas, {
-      type: 'line',
-      data: multiLineData,
-      options: options
-    });
-  }
-
-  if ($(".areachart-multi").length) {
-    var multiAreaCanvas = $(".areachart-multi").get(1).getContext("2d");
-    var multiAreaChart = new Chart(multiAreaCanvas, {
-      type: 'line',
-      data: multiAreaData,
-      options: multiAreaOptions
-    });
-  }
-
-  if ($(".doughnutChart").length) {
-    var doughnutChartCanvas = $(".doughnutChart").get(1).getContext("2d");
-    var doughnutChart = new Chart(doughnutChartCanvas, {
-      type: 'doughnut',
-      data: doughnutPieData,
-      options: doughnutPieOptions
-    });
-  }
-
-  if ($(".pieChart").length) {
-    var pieChartCanvas = $(".pieChart").get(1).getContext("2d");
-    var pieChart = new Chart(pieChartCanvas, {
-      type: 'pie',
-      data: doughnutPieData,
-      options: doughnutPieOptions
-    });
-  }
-
-  if ($(".areaChart").length) {
-    var areaChartCanvas = $(".areaChart").get(1).getContext("2d");
-    var areaChart = new Chart(areaChartCanvas, {
-      type: 'line',
-      data: areaData,
-      options: areaOptions
-    });
-  }
-
-  if ($(".scatterChart").length) {
-    var scatterChartCanvas = $(".scatterChart").get(1).getContext("2d");
-    var scatterChart = new Chart(scatterChartCanvas, {
-      type: 'scatter',
-      data: scatterChartData,
-      options: scatterChartOptions
-    });
-  }
-
-  if ($(".browserTrafficChart").length) {
-    var doughnutChartCanvas = $(".browserTrafficChart").get(1).getContext("2d");
-    var doughnutChart = new Chart(doughnutChartCanvas, {
-      type: 'doughnut',
-      data: browserTrafficData,
-      options: doughnutPieOptions
-    });
-  }
-
-
-
-  // Get context with jQuery - using jQuery's .get() method.
-  if ($(".barChart").length) {
-    var barChartCanvas = $(".barChart").get(2).getContext("2d");
-    // This will get the first returned node in the jQuery collection.
-    var barChart = new Chart(barChartCanvas, {
-      type: 'bar',
-      data: data,
-      options: options
-    });
-  }
-
-  if ($(".lineChart").length) {
-    var lineChartCanvas = $(".lineChart").get(2).getContext("2d");
-    var lineChart = new Chart(lineChartCanvas, {
-      type: 'line',
-      data: data,
-      options: options
-    });
-  }
-
-  if ($(".linechart-multi").length) {
-    var multiLineCanvas = $("#linechart-multi").get(2).getContext("2d");
-    var lineChart = new Chart(multiLineCanvas, {
-      type: 'line',
-      data: multiLineData,
-      options: options
-    });
-  }
-
-  if ($(".areachart-multi").length) {
-    var multiAreaCanvas = $(".areachart-multi").get(2).getContext("2d");
-    var multiAreaChart = new Chart(multiAreaCanvas, {
-      type: 'line',
-      data: multiAreaData,
-      options: multiAreaOptions
-    });
-  }
-
-  if ($(".doughnutChart").length) {
-    var doughnutChartCanvas = $(".doughnutChart").get(2).getContext("2d");
-    var doughnutChart = new Chart(doughnutChartCanvas, {
-      type: 'doughnut',
-      data: doughnutPieData,
-      options: doughnutPieOptions
-    });
-  }
-
-  if ($(".pieChart").length) {
-    var pieChartCanvas = $(".pieChart").get(2).getContext("2d");
-    var pieChart = new Chart(pieChartCanvas, {
-      type: 'pie',
-      data: doughnutPieData,
-      options: doughnutPieOptions
-    });
-  }
-
-  if ($(".areaChart").length) {
-    var areaChartCanvas = $(".areaChart").get(2).getContext("2d");
-    var areaChart = new Chart(areaChartCanvas, {
-      type: 'line',
-      data: areaData,
-      options: areaOptions
-    });
-  }
-
-  if ($(".scatterChart").length) {
-    var scatterChartCanvas = $(".scatterChart").get(2).getContext("2d");
-    var scatterChart = new Chart(scatterChartCanvas, {
-      type: 'scatter',
-      data: scatterChartData,
-      options: scatterChartOptions
-    });
-  }
-
-  if ($(".browserTrafficChart").length) {
-    var doughnutChartCanvas = $(".browserTrafficChart").get(2).getContext("2d");
+  if ($("#browserTrafficChart").length) {
+    var doughnutChartCanvas = $("#browserTrafficChart").get(0).getContext("2d");
     var doughnutChart = new Chart(doughnutChartCanvas, {
       type: 'doughnut',
       data: browserTrafficData,
@@ -519,4 +375,3 @@ $(function() {
     });
   }
 });
-
