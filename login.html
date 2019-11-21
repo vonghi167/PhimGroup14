@@ -6,6 +6,16 @@
       <link rel="stylesheet" href="./css/anime.css">
    <link rel="stylesheet" href="./css/home.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script type="text/javascript">
+function checkLogin() {
+  var user = document.getElementById("user").value;
+  var password = document.getElementById("password").value;
+  if(user === "admin" && password === "admin"){
+  	window.location.assign('backend/backendPhim/template/index.html');
+  }
+}
+</script> 
+	
 
 
 </head>
@@ -71,16 +81,26 @@
 	<div class="loginbox">
 		<img src="./index_files/avatar.png" class="avatar">
 		<h1>Login here</h1>
-		<form action="#" method="">
+		<form  >
 			<p>Username</p>
-			<input type="text" name="" placeholder="Enter Username" required="">
+			<input type="text" id="user" placeholder="Enter Username" required="">
 			<p>Password</p>
-			<input type="password" name="" placeholder="Enter Password" required="">
-			<input formaction="index.html" type="submit" value="Login" >
+			<input type="password" id="password" placeholder="Enter Password" required="">
+			<input type="button" value="Login" onclick="checkLogin()" style="    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+">
 			<a href="forgotpass.html">Lost your password?</a>
 			<a href="register.html"><span>Don't have an account?</span></a>
 		</form>
 	</div>
+
+
+
 
 </body>
 </html>
