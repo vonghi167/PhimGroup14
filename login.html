@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Login Anime</title>
-   <link rel="stylesheet" href="./css/login.css">
-      <link rel="stylesheet" href="./css/anime.css">
-   <link rel="stylesheet" href="./css/home.css">
+	<title>Login Anime</title>
+	<link rel="stylesheet" href="./css/login.css">
+	<link rel="stylesheet" href="./css/anime.css">
+	<link rel="stylesheet" href="./css/home.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script type="text/javascript">
-function checkLogin() {
-  var user = document.getElementById("user").value;
-  var password = document.getElementById("password").value;
-  if(user === "admin" && password === "admin"){
-  	window.location.assign('backend/backendPhim/template/index.html');
-  }
-}
-</script> 
-	
+	<script type="text/javascript">
+		function checkLogin() {
+			var user = document.getElementById("user").value;
+			var password = document.getElementById("password").value;
+			if (user === "admin" && password === "admin") {
+				window.location.assign('backend/backendPhim/template/index.html');
+			}
+		}
+	</script>
+
 
 
 </head>
- <header>
-    <nav class="navbar" style="">
-    	<div class="navbar-container">
+<header>
+	<nav class="navbar" style="">
+		<div class="navbar-container">
 			<div class="navbar-header">
 				<div class="navbar-brand">
-					<a  class = "logo" href= "index.html">
+					<a class="logo" href="index.html">
 						<img src="./index_files/logo.png" alt="phimgroup14">
 					</a>
 				</div>
@@ -32,50 +33,72 @@ function checkLogin() {
 					<i class="icon-menu"></i>
 				</div>
 				<div class="navbar-header-user">
-						        		 <a class="user-login user-avatar" href="login.html" id="user-avatar">
-	        				<i class="icon-person"></i> 
-	        			</a>
-	        		    						</div>
+					<a class="user-login user-avatar" href="login.html" id="user-avatar">
+						<i class="icon-person"></i>
+					</a>
+				</div>
 			</div>
 			<div class="navbar-left" id="navbar-left">
-				
+
 				<div class="navbar-search">
 					<div class="search-box">
 						<input type="text" name="search-box" placeholder="Tìm kiếm anime" autocomplete="off">
 						<i class="icon icon-search"></i>
 					</div>
 					<div class="search-result" id="search-result">
-						<div class="result-body ps-container ps-theme-default" data-ps-id="f03e121d-2ae4-5923-a767-d264afdf30e0"><div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div><div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div><div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+						<div class="result-body ps-container ps-theme-default"
+							data-ps-id="f03e121d-2ae4-5923-a767-d264afdf30e0">
+							<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+								<div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+							</div>
+							<div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
+								<div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+							</div>
+							<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+								<div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+							</div>
+							<div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
+								<div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+							</div>
+							<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+								<div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+							</div>
+							<div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
+								<div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+							</div>
+						</div>
 						<div class="result-noitem hidden"></div>
 						<div class="loading hidden"></div>
 					</div>
 				</div>
 				<div class="navbar-menu" style="">
-					<div class= "dropdown">
-					<a class="navbar-menu-item" ><i class="icon icon-film"></i> Anime</a>
-		    <div class="dropdown-content">
-      <a href="action.html">Hành động</a>
-      <a href="tinhcam.html">Tình cảm</a>
-      <a href="phieuluu.html">Phiêu lưu</a>
-	  <a href="vientuong.html">Viễn tưởng</a>
-	  <a href="kinhdi.html">Kinh dị</a>
-    </div>
-	</div>
-	                <a href = "movie.html" class="navbar-menu-item" ><i class="icon icon-star"></i> Phim mới</a>
-	                <a href = "news.html" class="navbar-menu-item"><i class="icon icon-news"></i> Tin tức</a>
-	               <a href = "charts.html" class="navbar-menu-item" title = "Bảng xếp hạng" ><i class="icon icon-chart"  ></i> BXH</a>
-	                
+					<div class="dropdown">
+						<a class="navbar-menu-item"><i class="icon icon-film"></i> Anime</a>
+						<div class="dropdown-content">
+							<a href="action.html">Hành động</a>
+							<a href="tinhcam.html">Tình cảm</a>
+							<a href="phieuluu.html">Phiêu lưu</a>
+							<a href="vientuong.html">Viễn tưởng</a>
+							<a href="kinhdi.html">Kinh dị</a>
+						</div>
+					</div>
+					<a href="movie.html" class="navbar-menu-item"><i class="icon icon-star"></i> Phim mới</a>
+					<a href="news.html" class="navbar-menu-item"><i class="icon icon-news"></i> Tin tức</a>
+					<a href="charts.html" class="navbar-menu-item" title="Bảng xếp hạng"><i class="icon icon-chart"></i>
+						BXH</a>
+
 				</div>
 				<div class="navbar-close">
 					<i class="icon-close"></i>
 				</div>
 			</div>
-			    			
-	                	        
-    </nav>
+
+
+	</nav>
 </header>
+
 <body>
-<img src = "./index_files/luffy1.png" height ="100%" style = "padding-top: 5%"> 
+	<img src="./index_files/luffy1.png" height="100%" style="padding-top: 5%">
 
 
 	<div class="loginbox">
@@ -107,4 +130,5 @@ function checkLogin() {
 
 
 </body>
+
 </html>
