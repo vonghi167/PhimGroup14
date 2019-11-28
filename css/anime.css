@@ -274,7 +274,7 @@ footer .fb-like{min-width:60px;margin:5px 0;}
 .list-movie-filter .list-movie-filter-item{float:left;margin:0px 6px;width:126px;}
 .list-movie-filter .dropdown{position:relative;display:inline-block;overflow:hidden;height:28px;border:1px solid #121212;border-radius:3px;background-color:#555;padding-right:10px;}
 .dropdown:before,
-.dropdown:after{content:'';position:absolute;z-index:2;top:9px;right:10px;width:0;height:0;border:4px dashed;border-color:#888 transparent;pointer-events:none;}
+.dropdown:after{position:absolute;z-index:2;top:9px;right:10px;width:0;height:0;border:4px dashed;border-color:#888 transparent;pointer-events:none;}
 .dropdown:before{border-bottom-style:solid;border-top:none;}
 .dropdown:after{margin-top:7px;border-top-style:solid;border-bottom:none;}
 .dropdown-select{position:relative;height:28px;line-height:14px;margin:0;padding:6px 28px 6px 10px;font-size:12px;color:#ddd;background:#f2f2f2;background:rgba(0, 0, 0, 0) !important;border:0;border-radius:0;-webkit-appearance:none;outline:none;}
