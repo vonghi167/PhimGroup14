@@ -2,133 +2,234 @@
 <html lang="en">
 
 <head>
-	<title>Login Anime</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Digital marketing agency, Digital marketing company, Digital marketing services">
+	<meta name="author" content="creativegigs">
+	<meta name="description"
+		content="Rogan creative multipurpose is a beautiful website template designed for SEO & Digital Agency websites.">
+	<meta name='og:image' content='images/home/ogg.png'>
+	<!-- For IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- For Resposive Device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- For Window Tab Color -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#233D63">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#233D63">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#233D63">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
+	<!-- Main style sheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- responsive style sheet -->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<title>Đăng nhập Anime</title>
 	<link rel="stylesheet" href="./css/login.css">
 	<link rel="stylesheet" href="./css/anime.css">
 	<link rel="stylesheet" href="./css/home.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<script type="text/javascript">
-		function checkLogin() {
-			var user = document.getElementById("user").value;
-			var password = document.getElementById("password").value;
-			if (user === "admin" && password === "admin") {
-				window.location.assign('backend/backendPhim/template/index.html');
-			}
-		}
-	</script>
-
-
-
+	<!-- Fix Internet Explorer ______________________________________-->
+	<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->
 </head>
-<header>
-	<nav class="navbar" style="">
-		<div class="navbar-container">
-			<div class="navbar-header">
-				<div class="navbar-brand">
-					<a class="logo" href="index.html">
-						<img src="./index_files/logo.png" alt="phimgroup14">
-					</a>
-				</div>
-				<div class="navbar-menu-toggle" id="navbar-toggle">
-					<i class="icon-menu"></i>
-				</div>
-				<div class="navbar-header-user">
-					<a class="user-login user-avatar" href="login.html" id="user-avatar">
-						<i class="icon-person"></i>
-					</a>
-				</div>
-			</div>
-			<div class="navbar-left" id="navbar-left">
-
-				<div class="navbar-search">
-					<div class="search-box">
-						<input type="text" name="search-box" placeholder="Tìm kiếm anime" autocomplete="off">
-						<i class="icon icon-search"></i>
-					</div>
-					<div class="search-result" id="search-result">
-						<div class="result-body ps-container ps-theme-default"
-							data-ps-id="f03e121d-2ae4-5923-a767-d264afdf30e0">
-							<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
-								<div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-							</div>
-							<div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
-								<div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
-							</div>
-							<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
-								<div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-							</div>
-							<div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
-								<div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
-							</div>
-							<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
-								<div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-							</div>
-							<div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
-								<div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
-							</div>
-						</div>
-						<div class="result-noitem hidden"></div>
-						<div class="loading hidden"></div>
-					</div>
-				</div>
-				<div class="navbar-menu" style="">
-					<div class="dropdown">
-						<a class="navbar-menu-item"><i class="icon icon-film"></i> Anime</a>
-						<div class="dropdown-content">
-							<a href="action.html">Hành động</a>
-							<a href="tinhcam.html">Tình cảm</a>
-							<a href="phieuluu.html">Phiêu lưu</a>
-							<a href="vientuong.html">Viễn tưởng</a>
-							<a href="kinhdi.html">Kinh dị</a>
-						</div>
-					</div>
-					<a href="movie.html" class="navbar-menu-item"><i class="icon icon-star"></i> Phim mới</a>
-					<a href="news.html" class="navbar-menu-item"><i class="icon icon-news"></i> Tin tức</a>
-					<a href="charts.html" class="navbar-menu-item" title="Bảng xếp hạng"><i class="icon icon-chart"></i>
-						BXH</a>
-
-				</div>
-				<div class="navbar-close">
-					<i class="icon-close"></i>
-				</div>
-			</div>
-
-
-	</nav>
-</header>
 
 <body>
-	<img src="./index_files/luffy1.png" height="100%" style="padding-top: 5%">
+	<div class="main-page-wrapper">
+
+		<!-- ===================================================
+				Loading Transition
+			==================================================== -->
+		<!-- Preloader -->
+		<section>
+			<div id="preloader">
+				<div id="ctn-preloader" class="ctn-preloader">
+					<div class="animation-preloader">
+						<div class="spinner"></div>
+						<div class="txt-loading">
+							<span data-text-preloader="G" class="letters-loading">
+								G
+							</span>
+							<span data-text-preloader="R" class="letters-loading">
+								R
+							</span>
+							<span data-text-preloader="O" class="letters-loading">
+								O
+							</span>
+							<span data-text-preloader="U" class="letters-loading">
+								U
+							</span>
+							<span data-text-preloader="P" class="letters-loading">
+								P
+							</span>
+							<span data-text-preloader="1" class="letters-loading">
+								1
+							</span>
+							<span data-text-preloader="4" class="letters-loading">
+								4
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<header>
+			<nav class="navbar">
+				<div class="navbar-container">
+					<div class="navbar-header">
+						<div class="navbar-brand">
+							<a class="logo" href="index.html">
+								<img src="./index_files/logo.png" alt="phimgroup14">
+							</a>
+						</div>
+						<div class="navbar-menu-toggle" id="navbar-toggle">
+							<i class="icon-menu"></i>
+						</div>
+						<div class="navbar-header-user">
+							<a class="user-login user-avatar" href="login.html" id="user-avatar">
+								<i class="icon-person"></i>
+							</a>
+						</div>
+					</div>
+					<div class="navbar-left" id="navbar-left">
+
+						<div class="navbar-search">
+							<div class="search-box">
+								<input type="text" name="search-box" placeholder="Tìm kiếm anime" autocomplete="off">
+								<i class="icon icon-search"></i>
+							</div>
+							<div class="search-result" id="search-result">
+								<div class="result-body ps-container ps-theme-default"
+									data-ps-id="f03e121d-2ae4-5923-a767-d264afdf30e0">
+									<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+										<div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+									</div>
+									<div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
+										<div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+									</div>
+									<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+										<div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+									</div>
+									<div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
+										<div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+									</div>
+									<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+										<div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+									</div>
+									<div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
+										<div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+									</div>
+								</div>
+								<div class="result-noitem hidden"></div>
+								<div class="loading hidden"></div>
+							</div>
+						</div>
+						<div class="navbar-menu">
+							<div class="dropdown">
+								<a class="navbar-menu-item"><i class="icon icon-film"></i> Anime</a>
+								<div class="dropdown-content">
+									<a href="action.html">Hành động</a>
+									<a href="tinhcam.html">Tình cảm</a>
+									<a href="phieuluu.html">Phiêu lưu</a>
+									<a href="vientuong.html">Viễn tưởng</a>
+									<a href="kinhdi.html">Kinh dị</a>
+								</div>
+							</div>
+							<a href="movie.html" class="navbar-menu-item"><i class="icon icon-star"></i> Phim mới</a>
+							<a href="news.html" class="navbar-menu-item"><i class="icon icon-news"></i> Tin tức</a>
+							<a href="charts.html" class="navbar-menu-item" title="Bảng xếp hạng"><i
+									class="icon icon-chart"></i>
+								BXH</a>
+
+						</div>
+						<div class="navbar-close">
+							<i class="icon-close"></i>
+						</div>
+					</div>
+			</nav>
+		</header>
+
+		<div class="signUp-page signUp-standard pt-50 pb-100">
+			<div class="shape-wrapper">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div> <!-- /.shape-wrapper -->
+			<div class="signUp-illustration"><img src="index_files/sign-up.svg" alt=""></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 ml-auto">
+						<div class="signin-form-wrapper">
+							<div class="title-area">
+								<h3>Đăng nhập.</h3>
+							</div> <!-- /.title-area -->
+							<form action="#" id="login-form">
+								<div class="row">
+									<div class="col-12">
+										<div class="input-group">
+											<input type="text" id="user" required> 
+											<label>Tên đăng nhập</label>
+										</div> <!-- /.input-group -->
+									</div> <!-- /.col- -->
+									<div class="col-12">
+										<div class="input-group">
+											<input type="password"  id="password" required>
+											<label>Mật khẩu</label>
+										</div> <!-- /.input-group -->
+									</div> <!-- /.col- -->
+								</div> <!-- /.row -->
+								<div class="agreement-checkbox d-flex justify-content-between align-items-center">
+									<div>
+										<input type="checkbox" id="remember">
+										<label for="remember">Ghi nhớ tài khoản</label>
+									</div>
+									<a href="#">Quên tài khoản?</a>
+								</div>
+								<button class="solid-button-one" onclick="checkLogin()" >Đăng nhập</button>
+							</form>
+							<p class="signUp-text">Bạn chưa có tài khoản? <a href="register.html">Đăng ký</a>
+								ngay.</p>
+						</div> <!-- /.signin-form-wrapper -->
+					</div>
+				</div>
+			</div>
+		</div> <!-- /.signUp-page -->
+
+		<script src="vendor/jquery.2.2.3.min.js"></script>
+		<!-- Popper js -->
+		<script src="vendor/popper.js/popper.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<!-- js ui -->
+		<script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+		<!-- Select js -->
+		<script src="vendor/selectize.js/selectize.min.js"></script>
 
 
-	<div class="loginbox">
-		<img src="./index_files/avatar.png" class="avatar">
-		<h1>Login here</h1>
-		<form action="index.html" method="get">
-
-			<p>Username</p>
-			<input type="text" id="user" placeholder="Enter Username" required="">
-			<p>Password</p>
-			<input type="password" id="password" placeholder="Enter Password" required="">
-			<input type="button" value="Login" onclick="checkLogin()" style="    border: none;
-    outline: none;
-    height: 40px;
-    background: #fb2525;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px;
-">
-			<a href="forgotpass.html">Lost your password?</a>
-			<a href="register.html"><span>Don't have an account?</span></a>
-			<br>
-			<span style = "font-size : 10px" > Nhập tên tài khoản và mật khẩu là: admin </span>
-		
-		</form>
-	</div>
+		<!-- Language js -->
+		<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
+		<!-- Theme js -->
+		<script src="js/lang.js"></script>
+		<script src="js/theme.js"></script>
 
-
+		<script type="text/javascript">
+			function checkLogin() {
+				var user = document.getElementById("user").value;
+				var password = document.getElementById("password").value;
+				if (user === "admin" && password === "admin") {
+					window.location.assign('backend/backendPhim/template/index.html');
+				}
+			}
+		</script>
+	</div> <!-- /.main-page-wrapper -->
 </body>
 
 </html>
