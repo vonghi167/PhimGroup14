@@ -30,6 +30,8 @@
 	<link rel="stylesheet" href="./css/anime.css">
 	<link rel="stylesheet" href="./css/home.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	
 	<!-- Fix Internet Explorer ______________________________________-->
 	<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -169,7 +171,7 @@
 							<div class="title-area">
 								<h3>Đăng nhập</h3>
 							</div> <!-- /.title-area -->
-							<form action="#" id="login-form">
+							<form action="" id="login-form">
 								<div class="row">
 									<div class="col-12">
 										<div class="input-group">
@@ -191,8 +193,25 @@
 									</div>
 									<a href="forgotpass.html">Quên tài khoản?</a>
 								</div>
-								<button class="solid-button-one" onclick="checkLogin()" >ĐĂNG NHẬP</button>
+								<input class="solid-button-one" type="button" name="" onclick="checkLogin();" value="ĐĂNG NHẬP">
 							</form>
+
+							<script type="text/javascript">
+								function checkLogin() {
+									var user = document.getElementById("user").value;
+									var password = document.getElementById("password").value;
+									
+									if (user === "admin" && password === "admin") {
+										window.location.assign('backend/backendPhim/template/index.html');
+										return;
+									}
+									if(user !== null && password !== null){
+										window.location.assign('index.html');
+										return;
+									}
+								}
+							</script>
+
 							<p class="signUp-text">Bạn chưa có tài khoản? <a href="register.html">Đăng ký</a>
 								ngay.</p>
 						</div> <!-- /.signin-form-wrapper -->
@@ -219,17 +238,12 @@
 		<!-- Theme js -->
 		<script src="js/lang.js"></script>
 		<script src="js/theme.js"></script>
+		
 
-		<script type="text/javascript">
-			function checkLogin() {
-				var user = document.getElementById("user").value;
-				var password = document.getElementById("password").value;
-				if (user === "admin" && password === "admin") {
-					window.location.assign('backend/backendPhim/template/index.html');
-				}
-			}
-		</script>
+		
 	</div> <!-- /.main-page-wrapper -->
+
+	
 </body>
 
 </html>
