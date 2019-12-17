@@ -139,8 +139,9 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Bảng thống kê phim đang phát</h4>
-                  <div class="table-responsive pt-3" >
-                    <table class="table table-bordered" >
+                   <div class="col-xs-12">
+                    <table id="datatable-buttons" class="table table-striped table-bordered dataTable no-footer" role="grid"
+          aria-describedby="datatable-buttons_info">
                       <thead>
                         <tr>
                           <th>
@@ -168,7 +169,7 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr class="table-info" >
+                        <tr role="row" class="odd" >
                           <td>
                             1
                           </td>
@@ -192,7 +193,7 @@
                           </td>
 						
                         </tr>
-                        <tr class="table-warning">
+                        <tr role="row" class="even">
                           <td>
                             2
                           </td>
@@ -216,7 +217,7 @@
                           </td>
 					
                         </tr>
-                        <tr class="table-danger">
+                        <tr role="row" class="odd">
                           <td>
                             3
                           </td>
@@ -240,7 +241,7 @@
                           </td>
 					
                         </tr>
-                        <tr class="table-success">
+                        <tr role="row" class="even">
                           <td>
                             4
                           </td>
@@ -264,7 +265,7 @@
                           </td>
 						
                         </tr>
-                        <tr class="table-primary">
+                        <tr role="row" class="odd">
                           <td>
                             5
                           </td>
