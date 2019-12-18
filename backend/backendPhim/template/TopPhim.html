@@ -131,8 +131,8 @@
               <span class="menu-title">Thống kê truy cập</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="topPhim.html">
+          <li class="nav-item active">
+            <a class="nav-link" href="topphim.html">
               <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title">Top Phim</span>
             </a>
@@ -177,6 +177,27 @@
   </div>
   <!-- container-scroller -->
   <!-- plugins:js -->
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script> 
+<!-- end script slider chát -->
+
+  <!-- plugins:js -->
   <script src="vendors/base/vendor.bundle.base.js"></script>
   <!-- endinject -->
     <!-- Plugin js for this page-->
@@ -190,6 +211,7 @@
   <!-- Custom js for this page-->
   <script src="js/chart.js"></script>
   <!-- End custom js for this page-->
+
 </body>
 
 </html>
