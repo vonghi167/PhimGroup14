@@ -10,26 +10,28 @@
   <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css">
   <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="css/style.css">
   <!-- endinject -->
-  <link rel="shortcut icon" href="images/favicon.png" />
-    <link rel="shortcut icon" href="../../images/favicon.png" />
-
+  <link rel="shortcut icon" href="logo.png" />
+  <link rel="stylesheet" href="../../../font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <div class="container-scroller">
-    <!-- partial:../../partials/_navbar.html -->
+    <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="navbar-brand-wrapper d-flex justify-content-center">
-        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
-          <a class="navbar-brand brand-logo" href="index.html"><img src="logo.png" alt="logo"/></a>
-          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo"/></a>
+        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
+          <a class="navbar-brand brand-logo" href="index.html"><img src="logo.png" alt="logo" /></a>
+
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="mdi mdi-sort-variant"></span>
           </button>
-        </div>  
+        </div>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <ul class="navbar-nav mr-lg-4 w-100">
@@ -40,35 +42,40 @@
                   <i class="mdi mdi-magnify"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="search" aria-describedby="search">
+              <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="search"
+                aria-describedby="search">
             </div>
           </li>
         </ul>
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item dropdown mr-1">
-            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
+              id="messageDropdown" href="#" data-toggle="dropdown">
               <i class="mdi mdi-message-text mx-0"></i>
               <span class="count"></span>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
               <p class="mb-0 font-weight-normal float-left dropdown-header">Tin nhắn</p>
-              
-   
+
+
             </div>
           </li>
           <li class="nav-item dropdown mr-4">
-            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center notification-dropdown" id="notificationDropdown" href="#" data-toggle="dropdown">
+            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center notification-dropdown"
+              id="notificationDropdown" href="#" data-toggle="dropdown">
               <i class="mdi mdi-bell mx-0"></i>
               <span class="count"></span>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="notificationDropdown">
               <p class="mb-0 font-weight-normal float-left dropdown-header">Thông báo</p>
+
+
             </div>
           </li>
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-              <img src="logo.png" alt="profile"/>
-              <span class="nav-profile-name">Admin</span>
+              <img src="logo.png" alt="profile" />
+              <span class="nav-profile-name"> Admin</span>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
               <a class="dropdown-item">
@@ -82,14 +89,15 @@
             </div>
           </li>
         </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
           <span class="mdi mdi-menu"></span>
         </button>
       </div>
     </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-      <!-- partial:../../partials/_sidebar.html -->
+      <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
@@ -99,9 +107,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-circle-outline menu-icon"></i>
-              <span class="menu-title">Quản lý Phim</span>
+              <span class="menu-title">Quản lý Phim </span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic">
@@ -124,11 +132,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="topPhim.html">
+            <a class="nav-link" href="topphim.html">
               <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title">Top Phim</span>
             </a>
           </li>
+
+
         </ul>
       </nav>
       <!-- partial -->
@@ -159,24 +169,6 @@
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Line chart</h4>
-                    <canvas class="lineChart"></canvas>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Bar chart</h4>
-                    <canvas class="barChart"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <!-- end thong ke tuan   -->
           <!-- start thong ke thang -->
@@ -185,21 +177,11 @@
               <div class="col-lg-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Line chart</h4>
-                    <canvas class="lineChart"></canvas>
+                    <h4 class="card-title">Doughnut chart</h4>
+                    <canvas class="doughnutChart"></canvas>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Bar chart</h4>
-                    <canvas class="barChart"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
               <div class="col-lg-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
@@ -207,15 +189,7 @@
                     <canvas class="areaChart"></canvas>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Doughnut chart</h4>
-                    <canvas class="doughnutChart"></canvas>
-                  </div>
-                </div>
-              </div>
+              </div>              
             </div>
           </div>
           <!-- end thong ke thang   -->
@@ -239,24 +213,6 @@
                 </div>
               </div>
             </div>                    
-            <div class="row">
-              <div class="col-lg-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Line chart</h4>
-                    <canvas class="lineChart"></canvas>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Bar chart</h4>
-                    <canvas class="barChart"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <!-- end thong ke nam   -->                    
         </div>
