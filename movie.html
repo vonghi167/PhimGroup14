@@ -1,671 +1,807 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Phim mới</title>
-	<script src="https://uhchat.net/code.php?f=16c532"></script>
-   <link rel="stylesheet" href="./css/login.css">
-      <link rel="stylesheet" href="./css/anime.css">
-   <link rel="stylesheet" href="./css/home.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Phim mới</title>
+<script src="https://uhchat.net/code.php?f=16c532"></script>
+<link rel="stylesheet" href="./css/login.css">
+<link rel="stylesheet" href="./css/anime.css">
+<link rel="stylesheet" href="./css/home.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
 </head>
- <header>
-    <nav class="navbar" style="">
-    	<div class="navbar-container">
+<header>
+	<nav class="navbar" style="">
+		<div class="navbar-container">
 			<div class="navbar-header">
 				<div class="navbar-brand">
-					<a  class = "logo" href= "index.html">
-						<img src="./index_files/logo.png" alt="phimgroup14">
+					<a class="logo" href="index.html"> <img
+						src="./index_files/logo.png" alt="phimgroup14">
 					</a>
 				</div>
 				<div class="navbar-menu-toggle" id="navbar-toggle">
 					<i class="icon-menu"></i>
 				</div>
 				<div class="navbar-header-user">
-						        		 <a class="user-login user-avatar" href="login.html" id="user-avatar">
-	        				<i class="icon-person"></i> 
-	        			</a>
-	        		    						</div>
+					<a class="user-login user-avatar" href="login.html"
+						id="user-avatar"> <i class="icon-person"></i>
+					</a>
+				</div>
 			</div>
 			<div class="navbar-left" id="navbar-left">
-				
+
 				<div class="navbar-search">
 					<div class="search-box">
-						<input type="text" name="search-box" placeholder="Tìm kiếm anime" autocomplete="off">
-						<i class="icon icon-search"></i>
+						<input type="text" name="search-box" placeholder="Tìm kiếm anime"
+							autocomplete="off"> <i class="icon icon-search"></i>
 					</div>
 					<div class="search-result" id="search-result">
-						<div class="result-body ps-container ps-theme-default" data-ps-id="f03e121d-2ae4-5923-a767-d264afdf30e0"><div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div><div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div><div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+						<div class="result-body ps-container ps-theme-default"
+							data-ps-id="f03e121d-2ae4-5923-a767-d264afdf30e0">
+							<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+								<div class="ps-scrollbar-x" tabindex="0"
+									style="left: 0px; width: 0px;"></div>
+							</div>
+							<div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
+								<div class="ps-scrollbar-y" tabindex="0"
+									style="top: 0px; height: 0px;"></div>
+							</div>
+							<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+								<div class="ps-scrollbar-x" tabindex="0"
+									style="left: 0px; width: 0px;"></div>
+							</div>
+							<div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
+								<div class="ps-scrollbar-y" tabindex="0"
+									style="top: 0px; height: 0px;"></div>
+							</div>
+							<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+								<div class="ps-scrollbar-x" tabindex="0"
+									style="left: 0px; width: 0px;"></div>
+							</div>
+							<div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
+								<div class="ps-scrollbar-y" tabindex="0"
+									style="top: 0px; height: 0px;"></div>
+							</div>
+						</div>
 						<div class="result-noitem hidden"></div>
 						<div class="loading hidden"></div>
 					</div>
 				</div>
 				<div class="navbar-menu" style="">
-					<div class= "dropdown">
-					<a class="navbar-menu-item" ><i class="icon icon-film"></i> Anime</a>
-		    <div class="dropdown-content">
-      <a href="action.html">Hành động</a>
-      <a href="tinhcam.html">Tình cảm</a>
-      <a href="phieuluu.html">Phiêu lưu</a>
-	  <a href="vientuong.html">Viễn tưởng</a>
-	  <a href="kinhdi.html">Kinh dị</a>
-    </div>
-	</div>
-	                <a href = "movie.html" class="navbar-menu-item" ><i class="icon icon-star"></i> Phim mới</a>
-	                <a href = "news.html" class="navbar-menu-item"><i class="icon icon-news"></i> Tin tức</a>
-	               <a href = "charts.html" class="navbar-menu-item" title = "Bảng xếp hạng" ><i class="icon icon-chart"  ></i> BXH</a>
-	                
+					<div class="dropdown">
+						<a class="navbar-menu-item"><i class="icon icon-film"></i>
+							Anime</a>
+						<div class="dropdown-content">
+							<a href="action.html">Hành động</a> <a href="tinhcam.html">Tình
+								cảm</a> <a href="phieuluu.html">Phiêu lưu</a> <a
+								href="vientuong.html">Viễn tưởng</a> <a href="kinhdi.html">Kinh
+								dị</a>
+						</div>
+					</div>
+					<a href="movie.html" class="navbar-menu-item"><i
+						class="icon icon-star"></i> Phim mới</a> <a href="news.html"
+						class="navbar-menu-item"><i class="icon icon-news"></i> Tin
+						tức</a> <a href="charts.html" class="navbar-menu-item"
+						title="Bảng xếp hạng"><i class="icon icon-chart"></i> BXH</a>
+
 				</div>
 				<div class="navbar-close">
 					<i class="icon-close"></i>
 				</div>
 			</div>
-			    			
-	                	        
-    </nav>
+	</nav>
 </header>
-      <div class="container">
+<div class="container">
 
 
-          <div class="slider-wrapper">
-    
-        <div class="slider-container" data-u="slides">
-            
-                
-                    <img class="slider-single" src="./index_files/anhnen.jpg" />
-                
-            
-        </div>
-    
-</div>    
-    <section class="tray ">
-      
-      <div class="tray-content">
-        <div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/digimon tamser.jpg" " alt="Digimon Tamers: Bousou Digimon Tokkyuu">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Digimon Tamers: Bousou Digimon Tokkyuu</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">1,998 lượt xem</div>
-                <div class="tray-film-likes">8 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Khoa Học Viễn Tưởng</span>,&nbsp;                         <span>Hài Hước</span>,&nbsp;                         <span>Phiêu Lưu</span>                    </div>
+	<div class="slider-wrapper">
 
-                <div class="tray-film-update">30 phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
+		<div class="slider-container" data-u="slides">
 
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/lời hứa trong đêm hội.jpg"  alt="Lời Hứa Trong Đêm Hội">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Lời Hứa Trong Đêm Hội</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">12,119 lượt xem</div>
-                <div class="tray-film-likes">75 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Lãng Mạn</span>,&nbsp;                         <span>Đời Thường</span>                    </div>
 
-                <div class="tray-film-update">??? phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
+			<img class="slider-single" src="./index_files/anhnen.jpg" />
 
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/blackfox.jpg"  alt="Black Fox">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Black Fox</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">21,321 lượt xem</div>
-                <div class="tray-film-likes">168 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Hành Động</span>                    </div>
 
-                <div class="tray-film-update">90 phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
+		</div>
 
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/Kimi dake.jpg"  alt="Kimi dake ni Motetainda">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Kimi dake ni Motetainda</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">5,287 lượt xem</div>
-                <div class="tray-film-likes">75 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Trường Học</span>,&nbsp;                         <span>Đời Thường</span>,&nbsp;                         <span>Kịch tính</span>                    </div>
+	</div>
+	<section class="tray ">
 
-                <div class="tray-film-update">??? phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/given movie.jpg" alt="Given Movie">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Given Movie</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">6,179 lượt xem</div>
-                <div class="tray-film-likes">118 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Đời Thường</span>,&nbsp;                         <span>Kịch tính</span>                    </div>
-
-                <div class="tray-film-update">??? phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/fate stay night.jpg"  alt="Fate/stay night Movie: Heaven&#039;s Feel - II. Lost Butterfly">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Fate/stay night Movie: Heaven&#039;s Feel - II. Lost Butterfly</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">75,459 lượt xem</div>
-                <div class="tray-film-likes">243 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Hành Động</span>,&nbsp;                         <span>Khoa Học Viễn Tưởng</span>,&nbsp;                         <span>Siêu Nhiên</span>                    </div>
-
-                <div class="tray-film-update">117 phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/youjo senki.jpg"  alt="Youjo Senki Movie: Manner Eizou">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Youjo Senki Movie: Manner Eizou</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">26,033 lượt xem</div>
-                <div class="tray-film-likes">178 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Hành Động</span>,&nbsp;                         <span>Kịch tính</span>                    </div>
-
-                <div class="tray-film-update">100 phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/violet evergarden.jpg"  alt="Violet Evergarden Gaiden: Eien to Jidou Shuki Ningyou">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Violet Evergarden Gaiden: Eien to Jidou Shuki Ningyou</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">23,801 lượt xem</div>
-                <div class="tray-film-likes">295 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Đời Thường</span>,&nbsp;                         <span>Giả Tưởng</span>                    </div>
-
-                <div class="tray-film-update">91 phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/ashitasekai.jpg"  alt="Ashita Sekai ga Owaru toshitemo">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Ashita Sekai ga Owaru toshitemo</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">14,523 lượt xem</div>
-                <div class="tray-film-likes">105 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Lãng Mạn</span>                    </div>
-
-                <div class="tray-film-update">95 phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/fate stay night2.jpg"  alt="Fate/stay night Movie: Heaven&#039;s Feel - III. Spring Song">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Fate/stay night Movie: Heaven&#039;s Feel - III. Spring Song</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">15,608 lượt xem</div>
-                <div class="tray-film-likes">99 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Hành Động</span>,&nbsp;                         <span>Siêu Nhiên</span>                    </div>
-
-                <div class="tray-film-update">??? phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/boku no hero.jpg"  alt="Boku no Hero Academia the Movie 2: Heroes:Rising">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Boku no Hero Academia the Movie 2: Heroes:Rising</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">64,039 lượt xem</div>
-                <div class="tray-film-likes">322 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Hành Động</span>,&nbsp;                         <span>Hài Hước</span>,&nbsp;                         <span>Trường Học</span>,&nbsp;                         <span>Siêu Nhiên</span>                    </div>
-
-                <div class="tray-film-update">??? phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/lovelive.jpg"  alt="Love Live! Sunshine!! The School Idol Movie: Over the Rainbow">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Love Live! Sunshine!! The School Idol Movie: Over the Rainbow</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">3,588 lượt xem</div>
-                <div class="tray-film-likes">30 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Trường Học</span>,&nbsp;                         <span>Đời Thường</span>                    </div>
-
-                <div class="tray-film-update">100 phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/waokami.jpg"  alt="Wakaokami wa Shougakusei! Movie">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Wakaokami wa Shougakusei! Movie</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">7,770 lượt xem</div>
-                <div class="tray-film-likes">102 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Hài Hước</span>,&nbsp;                         <span>Siêu Nhiên</span>,&nbsp;                         <span>Đời Thường</span>                    </div>
-
-                <div class="tray-film-update">94 phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/Free.jpg" alt="Free! Movie: Road to the World - Yume">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Free! Movie: Road to the World - Yume</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">7,540 lượt xem</div>
-                <div class="tray-film-likes">104 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Hài Hước</span>,&nbsp;                         <span>Trường Học</span>,&nbsp;                         <span>Đời Thường</span>,&nbsp;                         <span>Kịch tính</span>                    </div>
-
-                <div class="tray-film-update">120 phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/Rezero.jpg"  alt="Re:Zero kara Hajimeru Isekai Seikatsu - Memory Snow">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Re:Zero kara Hajimeru Isekai Seikatsu - Memory Snow</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">40,375 lượt xem</div>
-                <div class="tray-film-likes">345 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Kịch tính</span>                    </div>
-
-                <div class="tray-film-update">60 phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/dragonquest.jpg" alt="Dragon Quest: Your Story">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Dragon Quest: Your Story</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">13,555 lượt xem</div>
-                <div class="tray-film-likes">42 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Hài Hước</span>,&nbsp;                         <span>Phiêu Lưu</span>                    </div>
-
-                <div class="tray-film-update">??? phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/Bang.jpg"  alt="BanG Dream! Film Live">
-        <div class="tray-item-description">
-            <div class="tray-item-title">BanG Dream! Film Live</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">3,775 lượt xem</div>
-                <div class="tray-film-likes">48 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Đời Thường</span>                    </div>
-
-                <div class="tray-film-update">120 phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/ninokuni.jpg"  alt="Ni no Kuni">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Ni no Kuni</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">13,459 lượt xem</div>
-                <div class="tray-film-likes">108 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Hành Động</span>,&nbsp;                         <span>Phiêu Lưu</span>                    </div>
-
-                <div class="tray-film-update">??? phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/konosuba.jpg"  alt="Kono Subarashii Sekai ni Shukufuku wo!: Kurenai Densetsu">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Kono Subarashii Sekai ni Shukufuku wo!: Kurenai Densetsu</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">37,532 lượt xem</div>
-                <div class="tray-film-likes">431 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Hành Động</span>,&nbsp;                         <span>Hài Hước</span>,&nbsp;                         <span>Siêu Nhiên</span>                    </div>
-
-                <div class="tray-film-update">??? phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/Tenkinoko.jpg"  alt="Tenki no Ko">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Tenki no Ko</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">120,959 lượt xem</div>
-                <div class="tray-film-likes">1,339 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Lãng Mạn</span>,&nbsp;                         <span>Đời Thường</span>,&nbsp;                         <span>Kịch tính</span>                    </div>
-
-                <div class="tray-film-update">??? phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/Natsume.jpg"  alt="Natsume Yuujinchou Movie: Utsusemi ni Musubu">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Natsume Yuujinchou Movie: Utsusemi ni Musubu</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">24,322 lượt xem</div>
-                <div class="tray-film-likes">257 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Siêu Nhiên</span>,&nbsp;                         <span>Đời Thường</span>,&nbsp;                         <span>Giả Tưởng</span>                    </div>
-
-                <div class="tray-film-update">104 phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/damichi.jpg"  alt="Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka: Orion no Ya">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka: Orion no Ya</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">87,944 lượt xem</div>
-                <div class="tray-film-likes">630 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Hành Động</span>,&nbsp;                         <span>Phiêu Lưu</span>,&nbsp;                         <span>Giả Tưởng</span>                    </div>
-
-                <div class="tray-film-update">82 phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/kimito.jpg"  alt="Kimi to, Nami ni Noretara">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Kimi to, Nami ni Noretara</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">10,509 lượt xem</div>
-                <div class="tray-film-likes">140 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Lãng Mạn</span>,&nbsp;                         <span>Hài Hước</span>,&nbsp;                         <span>Kịch tính</span>                    </div>
-
-                <div class="tray-film-update">94 phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div><div class="tray-item">
-    <a href="watchMovie.html">
-        <img class="tray-item-thumbnail" src="./index_files/Mahou shojo.jpg"  alt="Mahou Shoujo Lyrical Nanoha: Detonation">
-        <div class="tray-item-description">
-            <div class="tray-item-title">Mahou Shoujo Lyrical Nanoha: Detonation</div>
-            <div class="tray-item-meta-info">
-                <div class="tray-film-views">14,067 lượt xem</div>
-                <div class="tray-film-likes">88 thích</div>
-            </div>
-        </div>
-        <div class="tray-film-genres">
-                        <span>Hành Động</span>,&nbsp;                         <span>Hài Hước</span>,&nbsp;                         <span>Siêu Nhiên</span>,&nbsp;                         <span>Kịch tính</span>                    </div>
-
-                <div class="tray-film-update">111 phút</div>
-        
-        <div class="tray-item-play-button">
-            <i class="icon-play"></i>
-        </div>
-
-        
-            </a>
-</div>      </div>
-            <div class="loading hidden"></div>
-      <div class="tray-more"style="font-size: 14px" >Xem thêm</div>
-      <input type="hidden" name="movie-page" id="movie-page">
-          </section>
-
-  </div>
-
-    <div class="floating-action">
-	<div class="action-item action-toggle"><i class="icon-assistive"></i></div>
-	<div class="action-item action-home"><i class="icon-home"></i></div>
-	<div class="action-item action-menu"><i class="icon-menu"></i></div>
-	<div class="action-item action-user"><i class="icon-person"></i></div>
-	<div class="action-item action-top"><i class="icon-up"></i></div>
-</div>    
-
-  
-  
-
-	
-							
-							
+		<div class="tray-content">
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/digimon tamser.jpg"
+					" alt="Digimon Tamers: Bousou Digimon Tokkyuu">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Digimon Tamers: Bousou Digimon
+							Tokkyuu</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">1,998 lượt xem</div>
+							<div class="tray-film-likes">8 thích</div>
 						</div>
-																			    	
+					</div>
+					<div class="tray-film-genres">
+						<span>Khoa Học Viễn Tưởng</span>,&nbsp; <span>Hài Hước</span>,&nbsp;
+						<span>Phiêu Lưu</span>
+					</div>
+
+					<div class="tray-film-update">30 phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/lời hứa trong đêm hội.jpg"
+					alt="Lời Hứa Trong Đêm Hội">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Lời Hứa Trong Đêm Hội</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">12,119 lượt xem</div>
+							<div class="tray-film-likes">75 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Lãng Mạn</span>,&nbsp; <span>Đời Thường</span>
+					</div>
+
+					<div class="tray-film-update">??? phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/blackfox.jpg" alt="Black Fox">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Black Fox</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">21,321 lượt xem</div>
+							<div class="tray-film-likes">168 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Hành Động</span>
+					</div>
+
+					<div class="tray-film-update">90 phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/Kimi dake.jpg" alt="Kimi dake ni Motetainda">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Kimi dake ni Motetainda</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">5,287 lượt xem</div>
+							<div class="tray-film-likes">75 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Trường Học</span>,&nbsp; <span>Đời Thường</span>,&nbsp; <span>Kịch
+							tính</span>
+					</div>
+
+					<div class="tray-film-update">??? phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/given movie.jpg" alt="Given Movie">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Given Movie</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">6,179 lượt xem</div>
+							<div class="tray-film-likes">118 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Đời Thường</span>,&nbsp; <span>Kịch tính</span>
+					</div>
+
+					<div class="tray-film-update">??? phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/fate stay night.jpg"
+					alt="Fate/stay night Movie: Heaven&#039;s Feel - II. Lost Butterfly">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Fate/stay night Movie:
+							Heaven&#039;s Feel - II. Lost Butterfly</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">75,459 lượt xem</div>
+							<div class="tray-film-likes">243 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Hành Động</span>,&nbsp; <span>Khoa Học Viễn Tưởng</span>,&nbsp;
+						<span>Siêu Nhiên</span>
+					</div>
+
+					<div class="tray-film-update">117 phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/youjo senki.jpg"
+					alt="Youjo Senki Movie: Manner Eizou">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Youjo Senki Movie: Manner Eizou</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">26,033 lượt xem</div>
+							<div class="tray-film-likes">178 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Hành Động</span>,&nbsp; <span>Kịch tính</span>
+					</div>
+
+					<div class="tray-film-update">100 phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/violet evergarden.jpg"
+					alt="Violet Evergarden Gaiden: Eien to Jidou Shuki Ningyou">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Violet Evergarden Gaiden: Eien
+							to Jidou Shuki Ningyou</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">23,801 lượt xem</div>
+							<div class="tray-film-likes">295 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Đời Thường</span>,&nbsp; <span>Giả Tưởng</span>
+					</div>
+
+					<div class="tray-film-update">91 phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/ashitasekai.jpg"
+					alt="Ashita Sekai ga Owaru toshitemo">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Ashita Sekai ga Owaru toshitemo</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">14,523 lượt xem</div>
+							<div class="tray-film-likes">105 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Lãng Mạn</span>
+					</div>
+
+					<div class="tray-film-update">95 phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/fate stay night2.jpg"
+					alt="Fate/stay night Movie: Heaven&#039;s Feel - III. Spring Song">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Fate/stay night Movie:
+							Heaven&#039;s Feel - III. Spring Song</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">15,608 lượt xem</div>
+							<div class="tray-film-likes">99 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Hành Động</span>,&nbsp; <span>Siêu Nhiên</span>
+					</div>
+
+					<div class="tray-film-update">??? phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/boku no hero.jpg"
+					alt="Boku no Hero Academia the Movie 2: Heroes:Rising">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Boku no Hero Academia the Movie
+							2: Heroes:Rising</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">64,039 lượt xem</div>
+							<div class="tray-film-likes">322 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Hành Động</span>,&nbsp; <span>Hài Hước</span>,&nbsp; <span>Trường
+							Học</span>,&nbsp; <span>Siêu Nhiên</span>
+					</div>
+
+					<div class="tray-film-update">??? phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/lovelive.jpg"
+					alt="Love Live! Sunshine!! The School Idol Movie: Over the Rainbow">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Love Live! Sunshine!! The
+							School Idol Movie: Over the Rainbow</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">3,588 lượt xem</div>
+							<div class="tray-film-likes">30 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Trường Học</span>,&nbsp; <span>Đời Thường</span>
+					</div>
+
+					<div class="tray-film-update">100 phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/waokami.jpg"
+					alt="Wakaokami wa Shougakusei! Movie">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Wakaokami wa Shougakusei! Movie</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">7,770 lượt xem</div>
+							<div class="tray-film-likes">102 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Hài Hước</span>,&nbsp; <span>Siêu Nhiên</span>,&nbsp; <span>Đời
+							Thường</span>
+					</div>
+
+					<div class="tray-film-update">94 phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/Free.jpg"
+					alt="Free! Movie: Road to the World - Yume">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Free! Movie: Road to the World
+							- Yume</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">7,540 lượt xem</div>
+							<div class="tray-film-likes">104 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Hài Hước</span>,&nbsp; <span>Trường Học</span>,&nbsp; <span>Đời
+							Thường</span>,&nbsp; <span>Kịch tính</span>
+					</div>
+
+					<div class="tray-film-update">120 phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/Rezero.jpg"
+					alt="Re:Zero kara Hajimeru Isekai Seikatsu - Memory Snow">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Re:Zero kara Hajimeru Isekai
+							Seikatsu - Memory Snow</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">40,375 lượt xem</div>
+							<div class="tray-film-likes">345 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Kịch tính</span>
+					</div>
+
+					<div class="tray-film-update">60 phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/dragonquest.jpg" alt="Dragon Quest: Your Story">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Dragon Quest: Your Story</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">13,555 lượt xem</div>
+							<div class="tray-film-likes">42 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Hài Hước</span>,&nbsp; <span>Phiêu Lưu</span>
+					</div>
+
+					<div class="tray-film-update">??? phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/Bang.jpg" alt="BanG Dream! Film Live">
+					<div class="tray-item-description">
+						<div class="tray-item-title">BanG Dream! Film Live</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">3,775 lượt xem</div>
+							<div class="tray-film-likes">48 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Đời Thường</span>
+					</div>
+
+					<div class="tray-film-update">120 phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/ninokuni.jpg" alt="Ni no Kuni">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Ni no Kuni</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">13,459 lượt xem</div>
+							<div class="tray-film-likes">108 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Hành Động</span>,&nbsp; <span>Phiêu Lưu</span>
+					</div>
+
+					<div class="tray-film-update">??? phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/konosuba.jpg"
+					alt="Kono Subarashii Sekai ni Shukufuku wo!: Kurenai Densetsu">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Kono Subarashii Sekai ni
+							Shukufuku wo!: Kurenai Densetsu</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">37,532 lượt xem</div>
+							<div class="tray-film-likes">431 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Hành Động</span>,&nbsp; <span>Hài Hước</span>,&nbsp; <span>Siêu
+							Nhiên</span>
+					</div>
+
+					<div class="tray-film-update">??? phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/Tenkinoko.jpg" alt="Tenki no Ko">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Tenki no Ko</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">120,959 lượt xem</div>
+							<div class="tray-film-likes">1,339 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Lãng Mạn</span>,&nbsp; <span>Đời Thường</span>,&nbsp; <span>Kịch
+							tính</span>
+					</div>
+
+					<div class="tray-film-update">??? phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/Natsume.jpg"
+					alt="Natsume Yuujinchou Movie: Utsusemi ni Musubu">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Natsume Yuujinchou Movie:
+							Utsusemi ni Musubu</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">24,322 lượt xem</div>
+							<div class="tray-film-likes">257 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Siêu Nhiên</span>,&nbsp; <span>Đời Thường</span>,&nbsp; <span>Giả
+							Tưởng</span>
+					</div>
+
+					<div class="tray-film-update">104 phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/damichi.jpg"
+					alt="Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka: Orion no Ya">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Dungeon ni Deai wo Motomeru no
+							wa Machigatteiru Darou ka: Orion no Ya</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">87,944 lượt xem</div>
+							<div class="tray-film-likes">630 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Hành Động</span>,&nbsp; <span>Phiêu Lưu</span>,&nbsp; <span>Giả
+							Tưởng</span>
+					</div>
+
+					<div class="tray-film-update">82 phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/kimito.jpg" alt="Kimi to, Nami ni Noretara">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Kimi to, Nami ni Noretara</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">10,509 lượt xem</div>
+							<div class="tray-film-likes">140 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Lãng Mạn</span>,&nbsp; <span>Hài Hước</span>,&nbsp; <span>Kịch
+							tính</span>
+					</div>
+
+					<div class="tray-film-update">94 phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+			<div class="tray-item">
+				<a href="watchMovie.html"> <img class="tray-item-thumbnail"
+					src="./index_files/Mahou shojo.jpg"
+					alt="Mahou Shoujo Lyrical Nanoha: Detonation">
+					<div class="tray-item-description">
+						<div class="tray-item-title">Mahou Shoujo Lyrical Nanoha:
+							Detonation</div>
+						<div class="tray-item-meta-info">
+							<div class="tray-film-views">14,067 lượt xem</div>
+							<div class="tray-film-likes">88 thích</div>
+						</div>
+					</div>
+					<div class="tray-film-genres">
+						<span>Hành Động</span>,&nbsp; <span>Hài Hước</span>,&nbsp; <span>Siêu
+							Nhiên</span>,&nbsp; <span>Kịch tính</span>
+					</div>
+
+					<div class="tray-film-update">111 phút</div>
+
+					<div class="tray-item-play-button">
+						<i class="icon-play"></i>
+					</div>
+
+
+				</a>
+			</div>
+		</div>
+		<div class="loading hidden"></div>
+		<div class="tray-more" style="font-size: 14px">Xem thêm</div>
+		<input type="hidden" name="movie-page" id="movie-page">
+	</section>
+
+</div>
+
+<div class="floating-action">
+	<div class="action-item action-toggle">
+		<i class="icon-assistive"></i>
+	</div>
+	<div class="action-item action-home">
+		<i class="icon-home"></i>
+	</div>
+	<div class="action-item action-menu">
+		<i class="icon-menu"></i>
+	</div>
+	<div class="action-item action-user">
+		<i class="icon-person"></i>
+	</div>
+	<div class="action-item action-top">
+		<i class="icon-up"></i>
+	</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
 </body>
 <!--Start footer-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <footer class="footer">
-              <div class="copy-right_text">
-            <div class="container"style="padding:0px 0px">
-                <div class="footer_border"></div>
-                <div class="row">
-                    <div class="col-xl-8 col-md-7 col-lg-9"style="float:left">                            
-							<h4> <img src="index_files/1.png" alt=""> Location</h4>
-							<div class="fw-info-box">
-							
-							<div class="fw-info-text">
-								<p>Ho Chi Minh City, Viet Nam</p>
-							</div>
-						</div>
-
-                    </div>
-					<div class="col-xl-8 col-md-7 col-lg-9"style="float:left;padding-left:100px">
-					<h4> <img src="index_files/3.png" alt=""> Email</h4>
+	<div class="copy-right_text">
+		<div class="container" style="padding: 0px 0px">
+			<div class="footer_border"></div>
+			<div class="row">
+				<div class="col-xl-8 col-md-7 col-lg-9" style="float: left">
+					<h4>
+						<img src="index_files/1.png" alt=""> Location
+					</h4>
 					<div class="fw-info-box">
-							
-							<div class="fw-info-text">
+
+						<div class="fw-info-text">
+							<p>Ho Chi Minh City, Viet Nam</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-xl-8 col-md-7 col-lg-9"
+					style="float: left; padding-left: 100px">
+					<h4>
+						<img src="index_files/3.png" alt=""> Email
+					</h4>
+					<div class="fw-info-box">
+
+						<div class="fw-info-text">
 							<p>Group14@gmail.com</p>
-								
-							</div>
+
 						</div>
-					 </div>
-					 <div class="col-xl-8 col-md-7 col-lg-9"style="float:left;padding-left:130px">
-					 <h4><img src="index_files/2.png" alt=""> Subscriptions</h4>
-					 <div class="fw-info-box">
-							
-							<div class="fw-info-text">
-								<p>+84 12345678</p>
-								<p>+84 98765432</p>
-							</div>
+					</div>
+				</div>
+				<div class="col-xl-8 col-md-7 col-lg-9"
+					style="float: left; padding-left: 130px">
+					<h4>
+						<img src="index_files/2.png" alt=""> Subscriptions
+					</h4>
+					<div class="fw-info-box">
+
+						<div class="fw-info-text">
+							<p>+84 12345678</p>
+							<p>+84 98765432</p>
 						</div>
-					 
-					 
-            </div>
-			 <div class="col-xl-8 col-md-7 col-lg-9"style="float:left;padding-left:125px">
-			 <h4><img src="index_files/4.png" alt=""> Social Media</h4>
-			 <div class="fw-info-box">
-							
-							<div class="social-links"style ="font-size:20px">
-								<a href="#"><i class="fa fa-pinterest" ></i></a>
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-dribbble"></i></a>
-							</div>
+					</div>
+
+
+				</div>
+				<div class="col-xl-8 col-md-7 col-lg-9"
+					style="float: left; padding-left: 125px">
+					<h4>
+						<img src="index_files/4.png" alt=""> Social Media
+					</h4>
+					<div class="fw-info-box">
+
+						<div class="social-links" style="font-size: 20px">
+							<a href="#"><i class="fa fa-pinterest"></i></a> <a href="#"><i
+								class="fa fa-facebook"></i></a> <a href="#"><i
+								class="fa fa-twitter"></i></a> <a href="#"><i
+								class="fa fa-dribbble"></i></a>
 						</div>
+					</div>
+				</div>
 			</div>
-        </div>
-		
+
 		</div>
-		</div>
-    </footer>
+	</div>
+</footer>
 <!--END footer-->
 </html>
