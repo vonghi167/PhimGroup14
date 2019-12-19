@@ -95,39 +95,7 @@
             <a href=""> ANIME VIỄN TƯỞNG</i></a>
         </div>
         <div class="list-movie-filter" style="margin-bottom: 10px;" id="list-movie-filter">
-            <script data-cfasync="false" type="text/javascript">
-                $(document).ready(function () {
-                    $('#filter-category').multiselect({
-                        onChange: function (option, checked) {
-                            // Get selected options.
-                            var selectedOptions = $('#filter-category option:selected');
-
-                            if (selectedOptions.length >= 3) {
-                                // Disable all other checkboxes.
-                                var nonSelectedOptions = $('#filter-category option').filter(
-                                    function () {
-                                        return !$(this).is(':selected');
-                                    });
-
-                                nonSelectedOptions.each(function () {
-                                    var input = $('input[value="' + $(this).val() + '"]');
-                                    input.prop('disabled', true);
-                                    input.parent('li').addClass('disabled');
-                                });
-                            } else {
-                                // Enable all checkboxes.
-                                $('#filter-category option').each(function () {
-                                    var input = $('input[value="' + $(this).val() + '"]');
-                                    input.prop('disabled', false);
-                                    input.parent('li').addClass('disabled');
-                                });
-                            }
-                        }
-                    });
-                });
-            </script>
-
-            <div class="list-movie-filter-main">
+                      <div class="list-movie-filter-main">
                 <form id="form-filter" class="form-inline" method="GET" action="tim-nang-cao/?keyword=">
 
                     <div class="list-movie-filter-item">
@@ -206,7 +174,6 @@
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail"
                             src="./index_files/7af5bcfb1c0211f8_74498c4c55d7a211_41696157078341749674.jpg"
-                            data-src="https://i.imacdn.com/vg/2016/09/28/571d56969a8eecae_f8ee8145545990f2_21165147507484949674.jpg"
                             alt="Tenka Hyakken: Meiji-kan e Youkoso! Tập 15">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Tenka Hyakken: Meiji-kan e Youkoso!</div>
@@ -224,7 +191,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/naruto.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/08/04/f4a690027799cfe2_5d8fe2c03c6356b6_31918156491265739674.jpg"
                             alt="Choujin Koukousei-tachi wa Isekai demo Yoyuu de Ikinuku you desu! Tập 3">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Naruto</div>
@@ -242,7 +208,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/mqdefault.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/10/17/00cffd6157048a34_cd7d0e43c754d94e_33033157133158319674.jpg"
                             alt="Phantasy Star Online 2: Episode Oracle Tập 2 - Naberius bất ổn">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Phantasy Star Online 2: Episode Oracle</div>
@@ -261,7 +226,6 @@
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail"
                             src="./index_files/00e8e592f210a767_e22c4f622ba15e67_46132157007081269674.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/10/03/00e8e592f210a767_e22c4f622ba15e67_46132157007081269674.jpg"
                             alt="Urashimasakatasen no Nichijou Tập 3">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Urashimasakatasen no Nichijou</div>
@@ -279,7 +243,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/puzzle-dragons-x-thumbnail-1465887717.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/10/17/8abc63b0a84500e1_4f158258805c675b_5111115713153796542306.jpg"
                             alt="Tập 2 - Nguồn gốc sức mạnh">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Puzzle dragon</div>
@@ -298,7 +261,6 @@
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail"
                             src="./index_files/ada90c1751b27126_93c807079e9b863b_71862157130092929674.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/10/17/dffd4406267797f1_c3751efa384a93e0_37365157130364629674.jpg"
                             alt="Tập 996 - Vua hải tặc mới">
                         <div class="tray-item-description">
                             <div class="tray-item-title">One Piece</div>
@@ -317,7 +279,6 @@
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail"
                             src="./index_files/12bf7945bf8fe727_60dd4fa628143682_43107157125933189674.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/10/17/12bf7945bf8fe727_60dd4fa628143682_43107157125933189674.jpg"
                             alt="Nanatsu no Taizai - Thất Đại Tội Tập 54 - Hồi ức của cuộc thánh chiến">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Nanatsu no Taizai - Thất Đại Tội</div>
@@ -336,7 +297,6 @@
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail"
                             src="./index_files/a8648186489cdaca_7e9643ea246c8fef_3823115709731078185710.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/10/17/5d9f20c9cccbdaf5_77dfa3d998749e27_29775157125867379674.jpg"
                             alt="Tập 2 - Khởi nguồn">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Dr Stone</div>
@@ -355,7 +315,6 @@
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail"
                             src="./index_files/aee67c7e8bd3706f_235df15403686347_4340215643779247185710.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/10/16/09076bde7a1a8e4a_669ed793ab624331_22550157124311529674.jpg"
                             alt="Ahiru no Sora Tập 3 - Đôi cánh của Momoharu">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Ahiru no Sora</div>
@@ -373,7 +332,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/blackfox.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/10/16/1456c5c2bac1678e_37f3227adbf95266_42635157124248439674.jpg"
                             alt="Z/X: Code Reunion Tập 2 - Drive Shaft khởi động">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Z/X: Code Reunion</div>
@@ -391,7 +349,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/boku no hero.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/09/08/6a7e6a01cd7f9785_46f4a34be6a4fce7_5116715679315671185710.jpg"
                             alt="Tập 69 - Đối đầu">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Boku no hero</div>
@@ -410,7 +367,6 @@
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail"
                             src="./index_files/dffd4406267797f1_c3751efa384a93e0_37365157130364629674.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/09/12/b895b4476f2c55c3_c25cc168ac2476a4_4698415682934752185710.jpg"
                             alt="Tenka Hyakken: Meiji-kan e Youkoso! Tập 1">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Tenka Hyakken: Meiji-kan e Youkoso!</div>
@@ -433,3 +389,36 @@
     </div>
 
 </body>
+  <script data-cfasync="false" type="text/javascript">
+                $(document).ready(function () {
+                    $('#filter-category').multiselect({
+                        onChange: function (option, checked) {
+                            // Get selected options.
+                            var selectedOptions = $('#filter-category option:selected');
+
+                            if (selectedOptions.length >= 3) {
+                                // Disable all other checkboxes.
+                                var nonSelectedOptions = $('#filter-category option').filter(
+                                    function () {
+                                        return !$(this).is(':selected');
+                                    });
+
+                                nonSelectedOptions.each(function () {
+                                    var input = $('input[value="' + $(this).val() + '"]');
+                                    input.prop('disabled', true);
+                                    input.parent('li').addClass('disabled');
+                                });
+                            } else {
+                                // Enable all checkboxes.
+                                $('#filter-category option').each(function () {
+                                    var input = $('input[value="' + $(this).val() + '"]');
+                                    input.prop('disabled', false);
+                                    input.parent('li').addClass('disabled');
+                                });
+                            }
+                        }
+                    });
+                });
+            </script>
+
+</html>

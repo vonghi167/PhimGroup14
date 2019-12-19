@@ -72,37 +72,7 @@
               <a href="index.html">ANIME</i></a>  <a>/</i></a>
 			        <a href=""> ANIME KINH DỊ</i></a>
             </div>
-			<div class="list-movie-filter" style="margin-bottom: 10px;" id="list-movie-filter">			<script data-cfasync="false" type="text/javascript">
-								$(document).ready(function() {
-									$('#filter-category').multiselect({
-										onChange: function(option, checked) {
-											// Get selected options.
-											var selectedOptions = $('#filter-category option:selected');
-							 
-											if (selectedOptions.length >= 3) {
-												// Disable all other checkboxes.
-												var nonSelectedOptions = $('#filter-category option').filter(function() {
-													return !$(this).is(':selected');
-												});
-							 
-												nonSelectedOptions.each(function() {
-													var input = $('input[value="' + $(this).val() + '"]');
-													input.prop('disabled', true);
-													input.parent('li').addClass('disabled');
-												});
-											}
-											else {
-												// Enable all checkboxes.
-												$('#filter-category option').each(function() {
-													var input = $('input[value="' + $(this).val() + '"]');
-													input.prop('disabled', false);
-													input.parent('li').addClass('disabled');
-												});
-											}
-										}
-									});
-								});
-							</script>					
+			<div class="list-movie-filter" style="margin-bottom: 10px;" id="list-movie-filter">			
 
 			<div class="list-movie-filter-main" >
                 <form id="form-filter" class="form-inline" method="GET" action="tim-nang-cao/?keyword=">
@@ -179,7 +149,7 @@
             <div class="tray-content index">
                                     <div class="tray-item">
   <a href="watchMovie.html">
-      <img class="tray-item-thumbnail" src="./index_files/kinhdi1.jpg" data-src="https://i.imacdn.com/vg/2016/09/28/571d56969a8eecae_f8ee8145545990f2_21165147507484949674.jpg" alt="Tasogare Otome x Amnesia">
+      <img class="tray-item-thumbnail" src="./index_files/kinhdi1.jpg"  alt="Tasogare Otome x Amnesia">
       <div class="tray-item-description">
           <div class="tray-item-title">Tasogare Otome x Amnesia</div>
           <div class="tray-item-meta-info">
@@ -194,7 +164,7 @@
                                             </a>
 </div>                                    <div class="tray-item">
   <a href="watchMovie.html">
-      <img class="tray-item-thumbnail" src="./index_files/kinhdi2.jpg" data-src="https://i.imacdn.com/vg/2019/08/04/f4a690027799cfe2_5d8fe2c03c6356b6_31918156491265739674.jpg" alt="Yami Shibai - Ám kịch">
+      <img class="tray-item-thumbnail" src="./index_files/kinhdi2.jpg" alt="Yami Shibai - Ám kịch">
       <div class="tray-item-description">
           <div class="tray-item-title">Yami Shibai - Ám kịch</div>
           <div class="tray-item-meta-info">
@@ -209,7 +179,7 @@
                                 </a>
 </div>                                    <div class="tray-item">
   <a href="watchMovie.html">
-      <img class="tray-item-thumbnail" src="./index_files/kinhdi3.jpg" data-src="https://i.imacdn.com/vg/2019/10/17/00cffd6157048a34_cd7d0e43c754d94e_33033157133158319674.jpg" alt="Paranoia Agent">
+      <img class="tray-item-thumbnail" src="./index_files/kinhdi3.jpg" alt="Paranoia Agent">
       <div class="tray-item-description">
           <div class="tray-item-title">Paranoia Agent</div>
           <div class="tray-item-meta-info">
@@ -224,7 +194,7 @@
                                             </a>
 </div>                                    <div class="tray-item">
   <a href="watchMovie.html">
-      <img class="tray-item-thumbnail" src="./index_files/kinhdi4.jpg" data-src="https://i.imacdn.com/vg/2019/10/03/00e8e592f210a767_e22c4f622ba15e67_46132157007081269674.jpg" alt="Ghost Hunt - Biệt đội săn ma">
+      <img class="tray-item-thumbnail" src="./index_files/kinhdi4.jpg" alt="Ghost Hunt - Biệt đội săn ma">
       <div class="tray-item-description">
           <div class="tray-item-title">Ghost Hunt - Biệt đội săn ma</div>
           <div class="tray-item-meta-info">
@@ -239,7 +209,7 @@
                                 </a>
 </div>                                    <div class="tray-item">
   <a href="watchMovie.html">
-      <img class="tray-item-thumbnail" src="./index_files/kinhdi5.jpg" data-src="https://i.imacdn.com/vg/2019/10/17/8abc63b0a84500e1_4f158258805c675b_5111115713153796542306.jpg" alt="ACTORS: Songs Connection Tập 2">
+      <img class="tray-item-thumbnail" src="./index_files/kinhdi5.jpg"  alt="ACTORS: Songs Connection Tập 2">
       <div class="tray-item-description">
           <div class="tray-item-title">ACTORS: Songs Connection</div>
           <div class="tray-item-meta-info">
@@ -254,7 +224,7 @@
                                 </a>
 </div>                                    <div class="tray-item">
   <a href="watchMovie.html">
-      <img class="tray-item-thumbnail" src="./index_files/kinhdi6.jpg" data-src="https://i.imacdn.com/vg/2019/10/17/dffd4406267797f1_c3751efa384a93e0_37365157130364629674.jpg" alt="Shiki - Thi quỷ">
+      <img class="tray-item-thumbnail" src="./index_files/kinhdi6.jpg"  alt="Shiki - Thi quỷ">
       <div class="tray-item-description">
           <div class="tray-item-title">Shiki - Thi quỷ</div>
           <div class="tray-item-meta-info">
@@ -269,7 +239,7 @@
                                             </a>
 </div>                                    <div class="tray-item">
   <a href="watchMovie.html">
-      <img class="tray-item-thumbnail" src="./index_files/kinhdi7.jpg" data-src="https://i.imacdn.com/vg/2019/10/17/12bf7945bf8fe727_60dd4fa628143682_43107157125933189674.jpg" alt=" Higurashi no Naku Koro ni - Khi ve sầu khóc">
+      <img class="tray-item-thumbnail" src="./index_files/kinhdi7.jpg" alt=" Higurashi no Naku Koro ni - Khi ve sầu khóc">
       <div class="tray-item-description">
           <div class="tray-item-title"> Higurashi no Naku Koro ni - Khi ve sầu khóc</div>
           <div class="tray-item-meta-info">
@@ -284,7 +254,7 @@
                                             </a>
 </div>                                    <div class="tray-item">
   <a href="watchMovie.html">
-      <img class="tray-item-thumbnail" src="./index_files/kinhdi8.jpg" data-src="https://i.imacdn.com/vg/2019/10/17/5d9f20c9cccbdaf5_77dfa3d998749e27_29775157125867379674.jpg" alt="Radiant Tập 24 - Thành phố của kỵ sĩ">
+      <img class="tray-item-thumbnail" src="./index_files/kinhdi8.jpg"  alt="Radiant Tập 24 - Thành phố của kỵ sĩ">
       <div class="tray-item-description">
           <div class="tray-item-title">Radiant</div>
           <div class="tray-item-meta-info">
@@ -299,7 +269,7 @@
                                             </a>
 </div>                                    <div class="tray-item">
   <a href="watchMovie.html">
-      <img class="tray-item-thumbnail" src="./index_files/kinhdi9.jpg" data-src="https://i.imacdn.com/vg/2019/10/16/09076bde7a1a8e4a_669ed793ab624331_22550157124311529674.jpg" alt="Umineko no Naku Koro ni">
+      <img class="tray-item-thumbnail" src="./index_files/kinhdi9.jpg" alt="Umineko no Naku Koro ni">
       <div class="tray-item-description">
           <div class="tray-item-title">Umineko no Naku Koro ni</div>
           <div class="tray-item-meta-info">
@@ -314,7 +284,7 @@
                                 </a>
 </div>                                    <div class="tray-item">
   <a href="watchMovie.html">
-      <img class="tray-item-thumbnail" src="./index_files/kinhdi10.jpg" data-src="https://i.imacdn.com/vg/2019/10/16/1456c5c2bac1678e_37f3227adbf95266_42635157124248439674.jpg" alt=" Jigoku Shoujo - Thiếu nữ đến từ địa ngục">
+      <img class="tray-item-thumbnail" src="./index_files/kinhdi10.jpg"  alt=" Jigoku Shoujo - Thiếu nữ đến từ địa ngục">
       <div class="tray-item-description">
           <div class="tray-item-title"> Jigoku Shoujo - Thiếu nữ đến từ địa ngục</div>
           <div class="tray-item-meta-info">
@@ -329,7 +299,7 @@
                                 </a>
 </div>                                    <div class="tray-item">
   <a href="watchMovie.html">
-      <img class="tray-item-thumbnail" src="./index_files/kinhdi11.jpg" data-src="https://i.imacdn.com/vg/2019/09/08/6a7e6a01cd7f9785_46f4a34be6a4fce7_5116715679315671185710.jpg" alt="Hataage! Kemono Michi Tập 2 - Ban điều tra x Kẻ sát ma thú">
+      <img class="tray-item-thumbnail" src="./index_files/kinhdi11.jpg"  alt="Hataage! Kemono Michi Tập 2 - Ban điều tra x Kẻ sát ma thú">
       <div class="tray-item-description">
           <div class="tray-item-title">Hataage! Kemono Michi</div>
           <div class="tray-item-meta-info">
@@ -344,7 +314,7 @@
                                 </a>
 </div>                                    <div class="tray-item">
   <a href="watchMovie.html">
-      <img class="tray-item-thumbnail" src="./index_files/kinhdi12.jpg" data-src="https://i.imacdn.com/vg/2019/09/12/b895b4476f2c55c3_c25cc168ac2476a4_4698415682934752185710.jpg" alt="Tenka Hyakken: Meiji-kan e Youkoso! Tập 1">
+      <img class="tray-item-thumbnail" src="./index_files/kinhdi12.jpg" alt="Tenka Hyakken: Meiji-kan e Youkoso! Tập 1">
       <div class="tray-item-description">
           <div class="tray-item-title">Koutetsujou no Kabane</div>
           <div class="tray-item-meta-info">
@@ -363,3 +333,35 @@
 			</div>
 			 
 </body>
+<script data-cfasync="false" type="text/javascript">
+								$(document).ready(function() {
+									$('#filter-category').multiselect({
+										onChange: function(option, checked) {
+											// Get selected options.
+											var selectedOptions = $('#filter-category option:selected');
+							 
+											if (selectedOptions.length >= 3) {
+												// Disable all other checkboxes.
+												var nonSelectedOptions = $('#filter-category option').filter(function() {
+													return !$(this).is(':selected');
+												});
+							 
+												nonSelectedOptions.each(function() {
+													var input = $('input[value="' + $(this).val() + '"]');
+													input.prop('disabled', true);
+													input.parent('li').addClass('disabled');
+												});
+											}
+											else {
+												// Enable all checkboxes.
+												$('#filter-category option').each(function() {
+													var input = $('input[value="' + $(this).val() + '"]');
+													input.prop('disabled', false);
+													input.parent('li').addClass('disabled');
+												});
+											}
+										}
+									});
+								});
+							</script>					
+</html>

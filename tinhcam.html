@@ -97,39 +97,7 @@
             <a href=""> ANIME TÌNH CẢM</i></a>
         </div>
         <div class="list-movie-filter" style="margin-bottom: 10px;" id="list-movie-filter">
-            <script data-cfasync="false" type="text/javascript">
-                $(document).ready(function () {
-                    $('#filter-category').multiselect({
-                        onChange: function (option, checked) {
-                            // Get selected options.
-                            var selectedOptions = $('#filter-category option:selected');
-
-                            if (selectedOptions.length >= 3) {
-                                // Disable all other checkboxes.
-                                var nonSelectedOptions = $('#filter-category option').filter(
-                                    function () {
-                                        return !$(this).is(':selected');
-                                    });
-
-                                nonSelectedOptions.each(function () {
-                                    var input = $('input[value="' + $(this).val() + '"]');
-                                    input.prop('disabled', true);
-                                    input.parent('li').addClass('disabled');
-                                });
-                            } else {
-                                // Enable all checkboxes.
-                                $('#filter-category option').each(function () {
-                                    var input = $('input[value="' + $(this).val() + '"]');
-                                    input.prop('disabled', false);
-                                    input.parent('li').addClass('disabled');
-                                });
-                            }
-                        }
-                    });
-                });
-            </script>
-
-            <div class="list-movie-filter-main">
+                      <div class="list-movie-filter-main">
                 <form id="form-filter" class="form-inline" method="GET" action="tim-nang-cao/?keyword=">
 
                     <div class="list-movie-filter-item">
@@ -207,7 +175,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/tinhcam1.jpg"
-                            data-src="https://i.imacdn.com/vg/2016/09/28/571d56969a8eecae_f8ee8145545990f2_21165147507484949674.jpg"
                             alt="Shigatsu wa Kimi no Uso ">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Shigatsu wa Kimi no Uso </div>
@@ -225,7 +192,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/tinhcam2.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/08/04/f4a690027799cfe2_5d8fe2c03c6356b6_31918156491265739674.jpg"
                             alt="Akagami no Shirayukihime">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Akagami no Shirayukihime</div>
@@ -243,7 +209,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/tinhcam3.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/10/17/00cffd6157048a34_cd7d0e43c754d94e_33033157133158319674.jpg"
                             alt="Phantasy Star Online 2: Episode Oracle Tập 2 - Naberius bất ổn">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Phantasy Star Online 2: Episode Oracle</div>
@@ -261,7 +226,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/tinhcam4.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/10/03/00e8e592f210a767_e22c4f622ba15e67_46132157007081269674.jpg"
                             alt="Clannad – After Story">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Clannad – After Story</div>
@@ -279,7 +243,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/tinhcam5.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/10/17/8abc63b0a84500e1_4f158258805c675b_5111115713153796542306.jpg"
                             alt="Ore Monogatari">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Ore Monogatari</div>
@@ -297,7 +260,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/tinhcam6.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/10/17/dffd4406267797f1_c3751efa384a93e0_37365157130364629674.jpg"
                             alt="Say I Love You – Sukitte Ii na yo">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Say I Love You – Sukitte Ii na yo</div>
@@ -315,7 +277,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/tinhcam7.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/10/17/12bf7945bf8fe727_60dd4fa628143682_43107157125933189674.jpg"
                             alt="Kimi ni Todoke">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Kimi ni Todoke</div>
@@ -333,7 +294,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/tinhcam8.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/10/17/5d9f20c9cccbdaf5_77dfa3d998749e27_29775157125867379674.jpg"
                             alt="Emma – A Victorian Romance">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Emma – A Victorian Romance</div>
@@ -351,7 +311,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/tinhcam9.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/10/16/09076bde7a1a8e4a_669ed793ab624331_22550157124311529674.jpg"
                             alt="Nana">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Nana</div>
@@ -369,7 +328,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/tinhcam10.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/10/16/1456c5c2bac1678e_37f3227adbf95266_42635157124248439674.jpg"
                             alt="Toradora– Cặp Mắt Sát Thủ">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Toradora– Cặp Mắt Sát Thủ</div>
@@ -387,7 +345,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/tinhcam11.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/09/08/6a7e6a01cd7f9785_46f4a34be6a4fce7_5116715679315671185710.jpg"
                             alt="Kaichou Wa Maid-sama">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Kaichou Wa Maid-sama</div>
@@ -405,7 +362,6 @@
                 <div class="tray-item">
                     <a href="watchMovie.html">
                         <img class="tray-item-thumbnail" src="./index_files/tinhcam12.jpg"
-                            data-src="https://i.imacdn.com/vg/2019/09/12/b895b4476f2c55c3_c25cc168ac2476a4_4698415682934752185710.jpg"
                             alt="Kokoro Connect">
                         <div class="tray-item-description">
                             <div class="tray-item-title">Kokoro Connect</div>
@@ -427,3 +383,35 @@
     </div>
 
 </body>
+  <script data-cfasync="false" type="text/javascript">
+                $(document).ready(function () {
+                    $('#filter-category').multiselect({
+                        onChange: function (option, checked) {
+                            // Get selected options.
+                            var selectedOptions = $('#filter-category option:selected');
+
+                            if (selectedOptions.length >= 3) {
+                                // Disable all other checkboxes.
+                                var nonSelectedOptions = $('#filter-category option').filter(
+                                    function () {
+                                        return !$(this).is(':selected');
+                                    });
+
+                                nonSelectedOptions.each(function () {
+                                    var input = $('input[value="' + $(this).val() + '"]');
+                                    input.prop('disabled', true);
+                                    input.parent('li').addClass('disabled');
+                                });
+                            } else {
+                                // Enable all checkboxes.
+                                $('#filter-category option').each(function () {
+                                    var input = $('input[value="' + $(this).val() + '"]');
+                                    input.prop('disabled', false);
+                                    input.parent('li').addClass('disabled');
+                                });
+                            }
+                        }
+                    });
+                });
+            </script>
+</html>
